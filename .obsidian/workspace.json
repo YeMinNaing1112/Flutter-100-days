@@ -49,8 +49,7 @@
               "title": "IDEA OF Application"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,11 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e6c79c5767537f6",
+  "active": "0db6c7738564c831",
   "lastOpenFiles": [
-    "In The Cirecle.md",
-    "Idea of applicaion/IDEA OF Application.md",
     "Daily Progress Flutter/Welcome.md",
+    "Idea of applicaion/IDEA OF Application.md",
+    "In The Cirecle.md",
     "Idea of applicaion",
     "Daily Progress Flutter/Day 1 - Starting the Jouny.md",
     "Daily Progress Flutter",
