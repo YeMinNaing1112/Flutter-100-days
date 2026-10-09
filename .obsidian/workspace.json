@@ -49,7 +49,8 @@
               "title": "IDEA OF Application"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,10 +226,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cacb73923c817ce8",
+  "active": "01f078ad5e269663",
   "lastOpenFiles": [
-    "CHATGPT_GITHUB_SYNC_TEST.md",
     "Daily Progress Flutter/Welcome.md",
+    "CHATGPT_GITHUB_SYNC_TEST.md",
     "Daily Progress Flutter/Day 1 - Starting the Jouny.md",
     "Idea of applicaion/IDEA OF Application.md",
     "In The Cirecle.md",
