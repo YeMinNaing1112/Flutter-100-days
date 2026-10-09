@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Progress Flutter/Welcome.md",
+                "file": "CHATGPT_GITHUB_SYNC_TEST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "CHATGPT_GITHUB_SYNC_TEST"
             }
           },
           {
@@ -225,12 +225,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2754b75c036cb85f",
+  "active": "cacb73923c817ce8",
   "lastOpenFiles": [
+    "Daily Progress Flutter/Welcome.md",
+    "CHATGPT_GITHUB_SYNC_TEST.md",
     "Daily Progress Flutter/Day 1 - Starting the Jouny.md",
     "Idea of applicaion/IDEA OF Application.md",
     "In The Cirecle.md",
-    "Daily Progress Flutter/Welcome.md",
     "Idea of applicaion",
     "Daily Progress Flutter",
     "create a link.md",
