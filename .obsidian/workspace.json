@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "In The Circle/01 Discovery/Problem Space.md",
+                "file": "Idea of applicaion/IDEA OF Application.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problem Space"
+              "title": "IDEA OF Application"
             }
           }
         ]
@@ -99,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Idea of applicaion/IDEA OF Application.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,16 +198,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0db6c7738564c831",
+  "active": "2e6c79c5767537f6",
   "lastOpenFiles": [
+    "In The Cirecle.md",
+    "Idea of applicaion/IDEA OF Application.md",
+    "Daily Progress Flutter/Day 1 - Starting the Jouny.md",
+    "Daily Progress Flutter/Welcome.md",
     "In The Circle/01 Discovery/User Interview.md",
     "In The Circle/01 Discovery/Problem Space.md",
-    "Daily Progress Flutter/Day 1 - Starting the Jouny.md",
-    "In The Cirecle.md",
     "In The Circle/01 Discovery",
     "In The Circle",
-    "Idea of applicaion/IDEA OF Application.md",
-    "Daily Progress Flutter/Welcome.md",
     "CHATGPT_GITHUB_SYNC_TEST.md",
     "Idea of applicaion",
     "Daily Progress Flutter",

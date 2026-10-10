@@ -20,7 +20,7 @@ The difficulty may not simply be that both partners have busy schedules. A more 
 
 This is an early interpretation, not a confirmed root cause. The meaning of “enough attention” still needs to be explored.
 
-## What we do not know yet
+## What we do not know yet [[Problem Space]]
 
 - What “enough attention” means to each partner.
 - Whether the unmet need is more communication, quality time, feeling remembered, emotional connection, reassurance, or something else.

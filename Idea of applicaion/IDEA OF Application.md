@@ -1,4 +1,4 @@
-## Name of the application is  ([[In The Cirecle]])
+## Name of the application is  In The Circle
 
  **Main Idea**
 
