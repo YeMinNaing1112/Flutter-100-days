@@ -34,6 +34,8 @@ This comes from one conversation and is not evidence that all couples experience
 
 The founder wants In The Circle to help couples maintain commitment and feel more involved in each other's everyday lives—not only couples in long-distance relationships.
 
+The founder's chosen three-month success outcome is that both partners support each other's personal goals while making time for their relationship.
+
 ### Outcomes the founder cares about
 
 - Understand each other's daily lives better and have fewer misunderstandings.
@@ -41,6 +43,7 @@ The founder wants In The Circle to help couples maintain commitment and feel mor
 - Feel more involved in each other's lives by sharing everyday moments.
 - Create small moments of connection throughout the day without requiring long conversations.
 - Help partners feel that both people are making an effort to maintain the relationship.
+- Support each other's personal goals without neglecting the relationship.
 
 **Most important intended outcome so far:** Help partners feel and demonstrate commitment through mutual effort and involvement.
 
@@ -57,6 +60,9 @@ The founder suspects that couples may struggle because:
 1. They have different expectations about how much attention or effort the relationship needs.
 2. They struggle to share their daily lives and gradually feel disconnected.
 3. They intend to spend time together but do not turn those intentions into actual plans.
+4. Work, study, and personal goals can leave the relationship with less time and energy.
+5. Different schedules make it difficult to find suitable opportunities to connect.
+6. One partner may carry more of the effort to initiate, share, or plan.
 
 These are hypotheses to investigate, not confirmed root causes.
 
@@ -73,18 +79,35 @@ Of the following, **mutual participation feels slightly more important** to the 
 - **Mutual understanding:** Both understand each other's responsibilities, feelings, and expectations.
 - **Mutual participation:** Both take an active interest in each other's lives and make an effort to stay involved.
 
-This distinction is useful for discovery, but it does not yet establish what the product should build.
+### Behaviors that show mutual effort
+
+The founder selected these behaviors as important:
+
+- **Sharing everyday life voluntarily:** Both partners share activities, experiences, and progress without one person always having to ask.
+- **Shared responsibility:** Both partners recognize that maintaining the relationship is a joint responsibility.
+- **Following through on plans:** Both make plans and try to honor their commitments.
+
+The founder also wants partners to support each other's personal goals while making time for their relationship.
+
+### Obstacles the founder currently considers important
+
+- **Lack of balance:** Work, study, and personal goals may take priority over the relationship.
+- **Communication and sharing difficulties:** Partners may not consistently share experiences, feelings, and needs.
+- **Lack of planning:** Partners may want to spend time together but fail to make intentional plans.
+- **Unequal effort:** One partner may initiate, share, or plan much more often.
+- **Difficulty fitting connection into routines:** The founder currently believes schedule conflicts are a bigger obstacle than simply forgetting to connect.
+
+The founder's current view is that the main problem is not necessarily a lack of love or a need for more hours together. It may be difficulty maintaining mutual involvement around different responsibilities and schedules. This remains unvalidated.
 
 ## Next question for the next session
 
-Imagine two partners share their daily schedules and know what each other is doing. What behaviors would make that sharing feel like real commitment rather than just exchanging information?
+**If both partners know each other's schedules, is that enough to help them feel more connected?**
 
-- **A. Taking initiative:** Both independently initiate sharing, ask about each other's day, and make plans.
-- **B. Responding with interest:** When one shares something, the other makes an effort to respond and show genuine interest.
-- **C. Following up:** Each remembers important things their partner mentioned and asks about them later.
-- **D. Making time together:** Both notice opportunities in their schedules and actively arrange time to connect.
+- **A. Yes:** Knowing when each partner is busy or available helps them understand each other and coordinate time.
+- **B. Partly:** Schedule awareness helps, but partners also need to share everyday experiences and make intentional plans.
+- **C. No:** Schedules are not the main issue; partners need to change how they participate in each other's lives.
 
-Choose as many as matter, then identify which matters most.
+Choose the option that best matches the founder's thinking and explain why. Do not start feature design until this question is discussed.
 
 ## Research reminder
 
