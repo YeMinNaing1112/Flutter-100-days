@@ -1,4 +1,4 @@
-# User Journey — In The Circle
+ # User Journey — In The Circle
 
 > **Status:** Early journey hypothesis based on the founder's description. This is an imagined scenario, not an observed or validated user journey. It needs to be checked with real couples.
 
