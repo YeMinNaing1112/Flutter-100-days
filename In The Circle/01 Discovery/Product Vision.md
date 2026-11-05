@@ -8,13 +8,15 @@ In The Circle aims to help committed couples grow individually and together whil
 
 ## Core philosophy
 
-**Two people. Two individual journeys. One shared future.**
+**Connect → Support → Grow**
 
-- Grow individually.
-- Achieve shared goals together.
-- Support each other's progress and difficulties.
-- Build better habits.
-- Stay involved in each other's lives and maintain the relationship.
+- **Connect:** Stay aware of each other's everyday lives, goals, progress, and feelings.
+- **Support:** Notice each other's efforts and difficulties, encourage one another, and make time for meaningful communication.
+- **Grow:** Make progress toward individual goals and shared goals, develop better habits, and build a future together.
+
+This is a reinforcing cycle: connection helps partners understand how to support each other; support helps both people keep growing; and growth gives them more to share and celebrate together.
+
+**Two people. Two individual journeys. One shared future.**
 
 ## Intended users
 
@@ -24,7 +26,7 @@ The product is not primarily designed around casual situationships or open relat
 
 ## Intended experience
 
-Each partner has individual goals, tasks, responsibilities, and habits. The couple can also have shared goals they work toward together.
+Each partner has individual goals, tasks, responsibilities, and habits. The couple can also have goals they work toward together.
 
 The product direction is to make each partner's activities and progress visible to the other by default, so they can understand what the other is working on, what they have accomplished, and where they may be struggling. Emotional updates may help partners notice how the other is feeling and respond with care.
 
