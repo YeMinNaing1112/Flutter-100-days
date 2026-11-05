@@ -1,4 +1,4 @@
- # User Journey — In The Circle
+# User Journey — In The Circle
 
 > **Status:** Early journey hypothesis based on the founder's description. This is an imagined scenario, not an observed or validated user journey. It needs to be checked with real couples.
 
@@ -6,38 +6,44 @@
 
 Two people, A and B, are in a serious relationship and want to build a future together. Each has individual responsibilities and goals, and they also have goals they want to achieve as a couple. Their daily schedules may differ, so they may not see each other or have much time to talk during the day.
 
+## The guiding cycle: Connect → Support → Grow
+
+The intended experience follows three connected stages:
+
+1. **Connect:** Each partner gains awareness of the other's plans, activities, accomplishments, difficulties, and emotional state.
+2. **Support:** That awareness gives each partner context to encourage the other, recognize progress, offer help, or make time for a short call or conversation.
+3. **Grow:** Both continue working toward personal goals, shared goals, and better habits while maintaining their relationship.
+
+The cycle repeats as partners share new experiences and progress.
+
 ## Hypothesized weekday journey
 
-### 1. Start the day
+### 1. Start the day — Connect
 
 - A and B wake up and begin their separate routines.
 - Each reviews their own tasks and plans for the day.
 - They can see what the other partner plans to work on.
 - This gives each person some context about the other's day and priorities.
 
-### 2. Go through individual responsibilities
+### 2. Go through individual responsibilities — Connect
 
 - Each partner works on personal tasks, studies, work, or habits.
 - They complete tasks at different times and may not be available to talk.
 - As they update their progress, the other partner can see what they are doing and what they have accomplished.
 
-### 3. Share progress and emotional context
+### 3. Notice and respond — Support
 
 - Partners can share progress, difficulties, and how they are feeling.
 - A partner may notice that the other is tired, sad, stressed, or having a difficult day.
-- This context may help them understand each other better instead of guessing what is happening.
+- With this context, they may take a minute or two to message or call, congratulate the other, ask about a difficulty, or offer encouragement.
+- The intention is not to require an immediate response or constant availability.
 
-### 4. Make a small connection
-
-- Even if one partner is busy, they may take a minute or two to message or call.
-- They can congratulate each other, ask about a difficulty, or offer encouragement.
-- The shared information is intended to make these small interactions more meaningful, not to replace direct communication.
-
-### 5. End the day and continue growing
+### 4. Reflect and continue — Grow
 
 - Partners can look back at what they accomplished and what remains unfinished.
 - An unfinished task does not mean failure; it can be rescheduled or continued another day.
-- They can talk about their day, recognize each other's efforts, and keep working toward their individual and shared goals.
+- They recognize each other's efforts and keep working toward individual and shared goals.
+- They continue building habits and making time for their relationship.
 
 ## Needs and intended outcomes
 
@@ -69,4 +75,4 @@ These are hypotheses to explore with couples, not established findings:
 
 ## Discovery note
 
-The founder's product philosophy is to help two people grow individually, achieve shared goals, build better habits, support each other's progress, and maintain a healthy relationship. The journey above translates that philosophy into a possible daily scenario. It should be revised after interviews and evidence from couples who fit the intended audience.
+The founder's product philosophy is **Connect → Support → Grow**: help two people stay aware of each other's lives, support each other's efforts and difficulties, and make progress toward individual and shared goals while maintaining a healthy relationship. The journey above translates that philosophy into a possible daily scenario. It should be revised after interviews and evidence from couples who fit the intended audience.
