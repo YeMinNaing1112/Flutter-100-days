@@ -62,7 +62,26 @@ Initial content:
 
 Examples may include saving for a wedding, planning a trip, or preparing for a future home.
 
-## 5. Structure at a glance
+## 5. Partner Alarm — playful care for daily routines
+
+**Concept:** Partners can create personalized alarms for each other as a fun way to show care and encourage healthy daily routines.
+
+Possible experiences discussed:
+- A partner chooses a playful alarm sound, such as duck quacks or a funny voice.
+- A partner sets a small wake-up challenge, such as doing 10 squats.
+- Partners may use their own recorded voices or other playful sounds.
+- The feature should make waking up and building routines feel more fun and supportive.
+
+### Rest-day decision — Option C confirmed
+
+- Each person controls their own rest days and can choose when they need time off.
+- Partners can also gift each other a rest day as a gesture of care.
+- The feature should express gratitude and mutual support, never control or pressure.
+- Challenges are encouragement, not proof of obedience.
+
+The detailed alarm controls, challenge rules, notifications, and dismissal behavior are still to be designed. The concept is mutual: both partners can give and receive these gestures.
+
+## 6. Structure at a glance
 
 | Destination | Main responsibility |
 |---|---|
@@ -70,7 +89,7 @@ Examples may include saving for a wedding, planning a trip, or preparing for a f
 | **Partner** | Partner's tasks, task progress and details, activities, and journey updates |
 | **Our Goals** | Mutual goals, shared responsibilities, contributions, and shared progress |
 
-## 6. Confirmed decisions
+## 7. Confirmed decisions
 
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
@@ -80,8 +99,11 @@ Examples may include saving for a wedding, planning a trip, or preparing for a f
 - [x] Open the Partner page when the user wants to see more of the partner's progress.
 - [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
 - [x] Allow a partner's task to be opened for more detail.
+- [x] Include the Partner Alarm concept as a playful, mutual way to support daily routines.
+- [x] Choose rest-day approach C: each person controls their own rest days, and partners can also gift each other a rest day.
+- [x] Keep the feature rooted in gratitude and care, not control.
 
-## 7. Still to design
+## 8. Still to design
 
 These details are intentionally not finalised yet:
 - The exact sections and layout inside each of the three pages.
@@ -89,8 +111,9 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
+- Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
-## 8. Next step
+## 9. Next step
 
 Define the **screen-level structure** for each destination, starting with My Day: identify its sections, their order, and what the user can do from each section.
 
