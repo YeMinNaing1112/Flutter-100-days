@@ -40,6 +40,14 @@ Use a **balanced focus**:
 
 This keeps My Day personal while making the partner's journey visible and reinforcing the idea that both people are growing together.
 
+### Daily task organization — flexible structure confirmed
+
+- Keep a dedicated **Morning Routine** section for tasks that are specifically part of the user's morning routine.
+- Keep other tasks together in one **Today's Tasks** list rather than dividing them into Morning, Afternoon, and Evening sections.
+- Let the user choose the order of tasks and complete them flexibly. For example, they can do Task 2 before Task 1.
+- Do not impose a fixed sequence or time-of-day grouping on general daily tasks.
+
+This gives routine habits a clear home while allowing the rest of the day to remain flexible.
 
 ## 3. Partner
 
@@ -113,6 +121,8 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Include the Partner Alarm concept as a playful, mutual way to support daily routines.
 - [x] Choose rest-day approach C: each person controls their own rest days, and partners can also gift each other a rest day.
 - [x] Keep the feature rooted in gratitude and care, not control.
+- [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
+- [x] Allow general daily tasks to be completed in any order, including doing Task 2 before Task 1.
 
 ## 8. Still to design
 
