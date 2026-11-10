@@ -30,6 +30,17 @@ The partner overview should provide an at-a-glance completion summary, for examp
 
 Tapping the partner overview should open the Partner page for more detail.
 
+### My Day visual hierarchy — Option C confirmed
+
+Use a **balanced focus**:
+- The user's personal progress appears first and remains the primary focus.
+- The partner's progress appears immediately below in a compact, easy-to-scan overview.
+- The user's daily task list follows.
+- The Partner overview remains visible near the top without making My Day feel like a shared dashboard.
+
+This keeps My Day personal while making the partner's journey visible and reinforcing the idea that both people are growing together.
+
+
 ## 3. Partner
 
 **Purpose:** Help the user understand what their partner is doing and how their day is progressing.
