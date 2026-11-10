@@ -1,0 +1,97 @@
+# Product Structure — In The Circle
+
+> **Phase:** Design  
+> **Status:** Initial structure decisions confirmed; screen-level details remain open.  
+> **Product philosophy:** Connect → Support → Grow
+
+## 1. Navigation model
+
+The application will use a **bottom navigation bar** with three primary destinations:
+
+1. **My Day** — the user's home screen.
+2. **Partner** — a deeper view of the partner's daily activities and progress.
+3. **Our Goals** — a dedicated space for goals and responsibilities shared by both partners.
+
+There will be **no separate Emotional Security tab**. Emotional security should be supported within the My Day and Partner experiences.
+
+## 2. My Day — Home
+
+**Purpose:** Help the user manage their own day while staying aware of their partner's progress.
+
+Initial content:
+- The user's daily to-do list.
+- The user's personal daily progress.
+- A compact overview of the partner's progress.
+
+The partner overview should provide an at-a-glance completion summary, for example:
+- **3 of 5 tasks completed**
+- **60% complete**
+- A visual progress bar.
+
+Tapping the partner overview should open the Partner page for more detail.
+
+## 3. Partner
+
+**Purpose:** Help the user understand what their partner is doing and how their day is progressing.
+
+Initial content:
+- The partner's daily tasks.
+- Completed and unfinished work, with the current progress of tasks.
+- A summary of the partner's overall daily progress.
+- Relevant activity and journey/arrival updates.
+
+A user should be able to tap an individual partner task to open its detail view. The exact fields and interactions in that detail view are still to be designed.
+
+### Emotional security principle
+
+The experience should communicate a partner's real activity and progress rather than relying on a separate manual availability label such as “Busy” or “Available”.
+
+For example, seeing that a partner is working on a task, has completed some tasks, or is travelling home can help the other person understand their situation without repeatedly asking.
+
+This should create reassurance and understanding, not surveillance or pressure.
+
+## 4. Our Goals
+
+**Purpose:** Give both partners a dedicated place to work towards a shared future.
+
+Initial content:
+- Mutual goals.
+- Shared tasks and responsibilities.
+- Each partner's contributions.
+- Overall progress towards each shared goal.
+
+Examples may include saving for a wedding, planning a trip, or preparing for a future home.
+
+## 5. Structure at a glance
+
+| Destination | Main responsibility |
+|---|---|
+| **My Day** | My tasks and progress, plus a compact partner-progress overview |
+| **Partner** | Partner's tasks, task progress and details, activities, and journey updates |
+| **Our Goals** | Mutual goals, shared responsibilities, contributions, and shared progress |
+
+## 6. Confirmed decisions
+
+- [x] Use a bottom navigation bar with three primary tabs.
+- [x] Make My Day the default home screen.
+- [x] Give Our Goals its own dedicated page.
+- [x] Show a small partner-progress overview on My Day.
+- [x] Use a visual progress bar and a completed/total summary (for example, 3/5 and 60%).
+- [x] Open the Partner page when the user wants to see more of the partner's progress.
+- [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
+- [x] Allow a partner's task to be opened for more detail.
+
+## 7. Still to design
+
+These details are intentionally not finalised yet:
+- The exact sections and layout inside each of the three pages.
+- The information and actions shown in a task-detail view.
+- The precise task-progress states and how progress is calculated.
+- How journey and arrival updates are presented and controlled.
+- What each partner can choose to share, and the privacy boundaries around shared activity.
+
+## 8. Next step
+
+Define the **screen-level structure** for each destination, starting with My Day: identify its sections, their order, and what the user can do from each section.
+
+> This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
