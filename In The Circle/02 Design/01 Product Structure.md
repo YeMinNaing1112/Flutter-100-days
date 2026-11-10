@@ -44,10 +44,12 @@ This keeps My Day personal while making the partner's journey visible and reinfo
 
 - Keep a dedicated **Morning Routine** section for tasks that are specifically part of the user's morning routine.
 - Keep other tasks together in one **Today's Tasks** list rather than dividing them into Morning, Afternoon, and Evening sections.
-- Let the user choose the order of tasks and complete them flexibly. For example, they can do Task 2 before Task 1.
-- Do not impose a fixed sequence or time-of-day grouping on general daily tasks.
+- Keep the task list in its existing order; users do not need to drag, rearrange, or prioritize tasks manually.
+- Let users tap any task to mark it complete, regardless of its position in the list. For example, Task 2 can be completed while Tasks 1 and 3 remain unfinished.
+- Show completion clearly in place (for example, with a checked state and subdued or struck-through task text), without requiring users to reorganize the list.
+- Do not impose a fixed completion sequence or time-of-day grouping on general daily tasks.
 
-This gives routine habits a clear home while allowing the rest of the day to remain flexible.
+This gives routine habits a clear home while allowing the rest of the day to remain flexible and low-pressure.
 
 ## 3. Partner
 
@@ -122,7 +124,8 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Choose rest-day approach C: each person controls their own rest days, and partners can also gift each other a rest day.
 - [x] Keep the feature rooted in gratitude and care, not control.
 - [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
-- [x] Allow general daily tasks to be completed in any order, including doing Task 2 before Task 1.
+- [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
+- [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
 
 ## 8. Still to design
 
