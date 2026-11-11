@@ -27,31 +27,14 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 
 ## 1.2 Partner connection — MVP invitation method
 
-- The first version will use an **invitation code** to connect two partners.
-- One person will generate a code and share it directly with their intended partner; the other person will enter the code to begin the connection process.
-- After entering a valid code, the invited person will see the inviter's profile and must explicitly accept before the two accounts become connected. Entering the code alone will not connect them.
-- **QR-code scanning is not part of the first version.** It can be considered for a later release.
-- The detailed connection flow and code rules (for example, confirmation, expiry, and whether a code can be reused) remain to be designed.
+- The first version will use a **private, shareable invitation link** generated for the intended partner. The link carries the invitation code/token, so the recipient does not need to type it manually.
+- The inviter can share the link through external messaging apps such as Telegram or Messenger.
+- When the recipient taps the link, In The Circle should open directly to the inviter's normal profile, where the recipient can review the profile and explicitly accept or decline the connection.
+- Each invitation is **single-use**: only one account can successfully accept it. Once an invitee accepts and the connection is established, that invitation expires and cannot be used by anyone else.
+- Simply opening or viewing the invitation should not consume it; it is used up when someone successfully accepts.
+- QR-code scanning is not part of the first version. It can be considered for a later release.
 
-This keeps the first release focused while supporting both nearby and long-distance couples through a code they can share.
-
-### Connection confirmation — inviter preview required
-
-- After the invited person enters a valid invitation code, show the inviter's profile before completing the connection.
-- The invited person must explicitly confirm that they want to connect; entering the code alone must not connect the accounts.
-- The exact profile information shown in this preview remains to be designed.
-
-### Invitation profile preview — reuse the normal profile
-
-- After entering a valid invitation code, the invited person sees the inviter's **normal In The Circle profile**, using the same page layout and profile information that would be shown when viewing another user's profile elsewhere in the app.
-- The invited person can review that profile and explicitly accept or decline the connection.
-- The exact profile fields and any privacy rules for a person who is not yet connected remain to be designed.
-
-### Starting partner connection from a locked tab
-
-- When a Solo Mode user opens the locked **Partner** or **Our Goals** tab, the in-page connection state includes an **Unlock this feature** action.
-- Selecting **Unlock this feature** takes the user to a dedicated invitation page where they can generate an invitation code to share with their intended partner.
-- The exact contents of the invitation page, including how a person who receives a code enters it, remain to be designed.
+This keeps connection intentional and private while making it easy to invite a long-distance or nearby partner through a messaging app.
 
 ## 2. My Day — Home
 
@@ -169,7 +152,8 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] After an invitation code is entered, show the inviter's profile and require the invited person to explicitly confirm before connecting.
 - [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a partner invitation code.
 - [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
-- [x] Use an invitation code as the partner-connection method in the first version; defer QR-code scanning to a later release.
+- [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
+- [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
 - [x] Support only one active partner connection per account.
@@ -198,7 +182,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: how invitees enter a received code, profile visibility before connection, and invitation-code rules (expiry, reuse, and related edge cases).
+- Partner invitation details: profile visibility before connection, invitation-link validity before acceptance, and edge cases such as declined or revoked invitations.
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
