@@ -29,6 +29,7 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 
 - The first version will use an **invitation code** to connect two partners.
 - One person will generate a code and share it directly with their intended partner; the other person will enter the code to begin the connection process.
+- After entering a valid code, the invited person will see the inviter's profile and must explicitly accept before the two accounts become connected. Entering the code alone will not connect them.
 - **QR-code scanning is not part of the first version.** It can be considered for a later release.
 - The detailed connection flow and code rules (for example, confirmation, expiry, and whether a code can be reused) remain to be designed.
 
@@ -147,6 +148,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 7. Confirmed decisions
 
+- [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
 - [x] Use an invitation code as the partner-connection method in the first version; defer QR-code scanning to a later release.
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
@@ -169,6 +171,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 8. Still to design
 
+- The information shown on the inviter's profile preview during the invitation-acceptance step.
 These details are intentionally not finalised yet:
 - The exact sections and layout inside each of the three pages.
 - The information and actions shown in a task-detail view.
