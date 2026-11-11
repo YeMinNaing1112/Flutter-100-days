@@ -41,6 +41,12 @@ This keeps the first release focused while supporting both nearby and long-dista
 - The invited person must explicitly confirm that they want to connect; entering the code alone must not connect the accounts.
 - The exact profile information shown in this preview remains to be designed.
 
+### Invitation profile preview — reuse the normal profile
+
+- After entering a valid invitation code, the invited person sees the inviter's **normal In The Circle profile**, using the same page layout and profile information that would be shown when viewing another user's profile elsewhere in the app.
+- The invited person can review that profile and explicitly accept or decline the connection.
+- The exact profile fields and any privacy rules for a person who is not yet connected remain to be designed.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
@@ -185,7 +191,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: which profile information appears in the confirmation preview, and invitation-code rules (expiry, reuse, and related edge cases).
+- Partner invitation details: profile visibility before connection, and invitation-code rules (expiry, reuse, and related edge cases).
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
