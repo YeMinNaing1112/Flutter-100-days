@@ -40,6 +40,12 @@ Use a **balanced focus**:
 
 This keeps My Day personal while making the partner's journey visible and reinforcing the idea that both people are growing together.
 
+### Adding tasks — quick-add button confirmed
+
+- Provide a **+ (Add Task)** button to create a task.
+- Keep the task list clean by not displaying a permanent empty input field.
+- The detailed add-task flow and optional task fields remain to be designed.
+
 ### Daily task organization — flexible structure confirmed
 
 - Keep a dedicated **Morning Routine** section for tasks that are specifically part of the user's morning routine.
@@ -138,6 +144,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
 - [x] Let each task owner update their own task progress; partners can view shared progress but cannot edit the other's tasks.
 - [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
+- [x] Use a + (Add Task) button as the entry point for creating tasks.
 
 ## 8. Still to design
 
