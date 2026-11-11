@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
+                "file": "In The Circle/02 Design/01 Product Structure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Discovery Stage Wrap-Up"
+              "title": "01 Product Structure"
             }
           }
         ]
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
+                "file": "In The Circle/02 Design/01 Product Structure.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -219,9 +219,11 @@
   },
   "active": "48958dc7ff0d20bb",
   "lastOpenFiles": [
+    "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
+    "In The Circle/02 Design/01 Product Structure.md",
+    "In The Circle/02 Design",
     "Untitled.base",
     "In The Circle/01 Discovery/Problem Space.md",
-    "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
     "In The Circle/01 Discovery/Product Vision.md",
     "In The Circle/01 Discovery/User Journey.md",
     "In The Circle/01 Discovery/User Interview.md",
