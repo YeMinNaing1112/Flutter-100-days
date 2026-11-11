@@ -17,18 +17,21 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 ## 1.1 Solo and connected experiences
 
 - A person can use In The Circle on their own without needing a partner connection.
-- Personal routines, tasks, and individual progress should be useful and available in solo use.
-- Connecting with another person is optional; a successful partner connection activates the shared partner experience, including viewing each other's shared progress and working on mutual goals.
-- The exact navigation and empty/connection states for solo users are still to be designed.
+- **My Day remains fully usable in Solo Mode**, including personal routines, tasks, and individual progress. It does not show a partner-progress overview when the user is not connected.
+- The three main tabs remain visible in both Solo Mode and Connected Mode.
+- In Solo Mode, opening **Partner** or **Our Goals** takes the user to an in-page locked/connection state explaining that connecting with a partner unlocks that feature.
+- Do not interrupt the solo experience with pop-ups, unsolicited prompts, or repeated connection reminders. The connection invitation appears only after the user intentionally opens a partner-dependent tab.
+- After a partner connection is established, the Partner and Our Goals destinations become available, and the partner-progress overview can appear on My Day.
+- The exact wording and visual design of the connection state remain to be designed.
 
 ## 2. My Day — Home
 
-**Purpose:** Help the user manage their own day while staying aware of their partner's progress.
+**Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
 
 Initial content:
 - The user's daily to-do list.
 - The user's personal daily progress.
-- A compact overview of the partner's progress.
+- In Connected Mode only, a compact overview of the partner's progress. This is not shown in Solo Mode.
 
 The partner overview should provide an at-a-glance completion summary, for example:
 - **3 of 5 tasks completed**
@@ -43,7 +46,8 @@ Use a **balanced focus**:
 - The user's personal progress appears first and remains the primary focus.
 - The partner's progress appears immediately below in a compact, easy-to-scan overview.
 - The user's daily task list follows.
-- The Partner overview remains visible near the top without making My Day feel like a shared dashboard.
+- In Connected Mode, the Partner overview remains visible near the top without making My Day feel like a shared dashboard.
+- In Solo Mode, omit the Partner overview entirely so My Day remains a complete personal experience.
 
 This keeps My Day personal while making the partner's journey visible and reinforcing the idea that both people are growing together.
 
@@ -127,7 +131,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 | Destination | Main responsibility |
 |---|---|
-| **My Day** | My tasks and progress, plus a compact partner-progress overview |
+| **My Day** | Personal tasks and progress; compact partner-progress overview only when connected |
 | **Partner** | Partner's tasks, task progress and details, activities, and journey updates |
 | **Our Goals** | Mutual goals, shared responsibilities, contributions, and shared progress |
 
@@ -136,7 +140,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
 - [x] Give Our Goals its own dedicated page.
-- [x] Show a small partner-progress overview on My Day.
+- [x] Show a small partner-progress overview on My Day only in Connected Mode; omit it in Solo Mode.
 - [x] Use a visual progress bar and a completed/total summary (for example, 3/5 and 60%).
 - [x] Open the Partner page when the user wants to see more of the partner's progress.
 - [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
