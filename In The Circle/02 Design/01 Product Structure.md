@@ -47,6 +47,12 @@ This keeps the first release focused while supporting both nearby and long-dista
 - The invited person can review that profile and explicitly accept or decline the connection.
 - The exact profile fields and any privacy rules for a person who is not yet connected remain to be designed.
 
+### Starting partner connection from a locked tab
+
+- When a Solo Mode user opens the locked **Partner** or **Our Goals** tab, the in-page connection state includes an **Unlock this feature** action.
+- Selecting **Unlock this feature** takes the user to a dedicated invitation page where they can generate an invitation code to share with their intended partner.
+- The exact contents of the invitation page, including how a person who receives a code enters it, remain to be designed.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
@@ -161,6 +167,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 ## 7. Confirmed decisions
 
 - [x] After an invitation code is entered, show the inviter's profile and require the invited person to explicitly confirm before connecting.
+- [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a partner invitation code.
 - [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
 - [x] Use an invitation code as the partner-connection method in the first version; defer QR-code scanning to a later release.
 - [x] Use a bottom navigation bar with three primary tabs.
@@ -191,7 +198,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: profile visibility before connection, and invitation-code rules (expiry, reuse, and related edge cases).
+- Partner invitation details: how invitees enter a received code, profile visibility before connection, and invitation-code rules (expiry, reuse, and related edge cases).
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
