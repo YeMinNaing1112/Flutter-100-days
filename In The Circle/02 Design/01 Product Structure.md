@@ -35,6 +35,12 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 
 This keeps the first release focused while supporting both nearby and long-distance couples through a code they can share.
 
+### Connection confirmation — inviter preview required
+
+- After the invited person enters a valid invitation code, show the inviter's profile before completing the connection.
+- The invited person must explicitly confirm that they want to connect; entering the code alone must not connect the accounts.
+- The exact profile information shown in this preview remains to be designed.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
@@ -148,6 +154,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 7. Confirmed decisions
 
+- [x] After an invitation code is entered, show the inviter's profile and require the invited person to explicitly confirm before connecting.
 - [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
 - [x] Use an invitation code as the partner-connection method in the first version; defer QR-code scanning to a later release.
 - [x] Use a bottom navigation bar with three primary tabs.
@@ -178,7 +185,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: the connection confirmation experience and invitation-code rules (expiry, reuse, and related edge cases).
+- Partner invitation details: which profile information appears in the confirmation preview, and invitation-code rules (expiry, reuse, and related edge cases).
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
