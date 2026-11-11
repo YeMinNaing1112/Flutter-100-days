@@ -14,6 +14,13 @@ The application will use a **bottom navigation bar** with three primary destinat
 
 There will be **no separate Emotional Security tab**. Emotional security should be supported within the My Day and Partner experiences.
 
+## 1.1 Solo and connected experiences
+
+- A person can use In The Circle on their own without needing a partner connection.
+- Personal routines, tasks, and individual progress should be useful and available in solo use.
+- Connecting with another person is optional; a successful partner connection activates the shared partner experience, including viewing each other's shared progress and working on mutual goals.
+- The exact navigation and empty/connection states for solo users are still to be designed.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day while staying aware of their partner's progress.
