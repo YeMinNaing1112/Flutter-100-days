@@ -17,6 +17,7 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 ## 1.1 Solo and connected experiences
 
 - A person can use In The Circle on their own without needing a partner connection.
+- Each account can have **only one active partner connection at a time**, reflecting the product's focus on committed, two-person relationships.
 - **My Day remains fully usable in Solo Mode**, including personal routines, tasks, and individual progress. It does not show a partner-progress overview when the user is not connected.
 - The three main tabs remain visible in both Solo Mode and Connected Mode.
 - In Solo Mode, opening **Partner** or **Our Goals** takes the user to an in-page locked/connection state explaining that connecting with a partner unlocks that feature.
@@ -139,6 +140,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
+- [x] Support only one active partner connection per account.
 - [x] Give Our Goals its own dedicated page.
 - [x] Show a small partner-progress overview on My Day only in Connected Mode; omit it in Solo Mode.
 - [x] Use a visual progress bar and a completed/total summary (for example, 3/5 and 60%).
