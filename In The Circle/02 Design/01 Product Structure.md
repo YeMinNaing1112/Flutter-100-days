@@ -63,6 +63,14 @@ Initial content:
 
 A user should be able to tap an individual partner task to open its detail view. The exact fields and interactions in that detail view are still to be designed.
 
+### Partner task progress — optional percentage
+
+- Support simple task states such as **Not started** and **Completed** for ordinary tasks.
+- Allow a task to show a percentage when progress is meaningful (for example, a longer-running project).
+- Percentage progress is optional; do not require every task to have a percentage.
+- The Partner page should show each task's appropriate progress representation, while My Day can retain a compact overall completion summary.
+- The exact interaction for setting and updating a task's percentage remains to be designed.
+
 ### Emotional security principle
 
 The experience should communicate a partner's real activity and progress rather than relying on a separate manual availability label such as “Busy” or “Available”.
@@ -126,6 +134,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
 - [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
 - [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
+- [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
 - [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
 
 ## 8. Still to design
