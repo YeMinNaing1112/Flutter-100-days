@@ -68,6 +68,7 @@ A user should be able to tap an individual partner task to open its detail view.
 - Support simple task states such as **Not started** and **Completed** for ordinary tasks.
 - Allow a task to show a percentage when progress is meaningful (for example, a longer-running project).
 - Percentage progress is optional; do not require every task to have a percentage.
+- **Only the task owner can update their own task's progress**, including its optional percentage; the partner can view the shared progress but cannot edit it.
 - The Partner page should show each task's appropriate progress representation, while My Day can retain a compact overall completion summary.
 - The exact interaction for setting and updating a task's percentage remains to be designed.
 
@@ -135,6 +136,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
 - [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
 - [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
+- [x] Let each task owner update their own task progress; partners can view shared progress but cannot edit the other's tasks.
 - [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
 
 ## 8. Still to design
