@@ -25,6 +25,15 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 - After a partner connection is established, the Partner and Our Goals destinations become available, and the partner-progress overview can appear on My Day.
 - The exact wording and visual design of the connection state remain to be designed.
 
+## 1.2 Partner connection — MVP invitation method
+
+- The first version will use an **invitation code** to connect two partners.
+- One person will generate a code and share it directly with their intended partner; the other person will enter the code to begin the connection process.
+- **QR-code scanning is not part of the first version.** It can be considered for a later release.
+- The detailed connection flow and code rules (for example, confirmation, expiry, and whether a code can be reused) remain to be designed.
+
+This keeps the first release focused while supporting both nearby and long-distance couples through a code they can share.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
@@ -138,6 +147,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 7. Confirmed decisions
 
+- [x] Use an invitation code as the partner-connection method in the first version; defer QR-code scanning to a later release.
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
 - [x] Support only one active partner connection per account.
@@ -165,6 +175,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
+- Partner invitation details: the connection confirmation experience and invitation-code rules (expiry, reuse, and related edge cases).
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
