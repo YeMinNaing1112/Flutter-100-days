@@ -46,7 +46,7 @@ This keeps My Day personal while making the partner's journey visible and reinfo
 - Keep other tasks together in one **Today's Tasks** list rather than dividing them into Morning, Afternoon, and Evening sections.
 - Keep the task list in its existing order; users do not need to drag, rearrange, or prioritize tasks manually.
 - Let users tap any task to mark it complete, regardless of its position in the list. For example, Task 2 can be completed while Tasks 1 and 3 remain unfinished.
-- Show completion clearly in place (for example, with a checked state and subdued or struck-through task text), without requiring users to reorganize the list.
+- When a task is completed, keep it in the same position and show its completed state (for example, a checkmark and subdued or struck-through text). Do not automatically move completed tasks to the bottom.
 - Do not impose a fixed completion sequence or time-of-day grouping on general daily tasks.
 
 This gives routine habits a clear home while allowing the rest of the day to remain flexible and low-pressure.
@@ -125,6 +125,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Keep the feature rooted in gratitude and care, not control.
 - [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
 - [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
+- [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
 - [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
 
 ## 8. Still to design
