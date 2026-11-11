@@ -36,6 +36,15 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 
 This keeps connection intentional and private while making it easy to invite a long-distance or nearby partner through a messaging app.
 
+### Two-sided confirmation — both partners approve
+
+- After the invitee opens the private link, they see the inviter's normal profile and can choose to accept or decline.
+- If the invitee accepts, this creates a **pending connection request**; it does not connect the accounts immediately.
+- The inviter then sees the invitee's normal profile and must explicitly approve or reject the request.
+- The accounts become connected only after both people have approved.
+- This second confirmation protects the inviter if the private link is forwarded or opened by someone other than the intended partner.
+- The invitation is consumed and expires once the connection is successfully established.
+
 ## 2. My Day — Home
 
 **Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
@@ -154,6 +163,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
 - [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
 - [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
+- [x] Require two-sided confirmation: the invitee accepts first, then the inviter reviews the invitee's normal profile and approves before the accounts connect.
 - [x] Use a bottom navigation bar with three primary tabs.
 - [x] Make My Day the default home screen.
 - [x] Support only one active partner connection per account.
@@ -182,7 +192,7 @@ These details are intentionally not finalised yet:
 - The precise task-progress states and how progress is calculated.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: profile visibility before connection, invitation-link validity before acceptance, and edge cases such as declined or revoked invitations.
+- Partner invitation details: profile visibility before connection, invitation-link validity, and what happens when either person declines or the inviter rejects a request.
 - Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
 ## 9. Next step
