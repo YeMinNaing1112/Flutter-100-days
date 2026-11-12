@@ -197,6 +197,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 - [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
 - [x] Let each task owner update their own task progress; partners can view shared progress but cannot edit the other's tasks.
 - [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
+- [x] Use one reusable Task Screen for creating, viewing, and editing tasks instead of separate Task Details and Add / Edit Task screens. A user's own task can be edited by its owner; a partner's task is view-only.
 
 ## 8. Still to design
 
@@ -228,10 +229,8 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 - **Invitation Profile** — open the inviter's normal profile from the link; the invitee can accept or decline.
 
 ### Task and goal details
-- **Task Details** — view a task and its progress.
-- **Add / Edit Task** — create or update a personal task.
-- **Goal Details** — view a shared goal and contributions.
-- **Add / Edit Goal** — create or update a shared goal.
+- **Task Screen** — one reusable screen with Create, View, and Edit modes. Users can create a task, view its details and progress, or edit their own task. A partner's task is view-only; partners cannot edit another person's task.
+- **Goal Screen** — the goal screen structure and its modes are still to be decided.
 
 ### Account management
 - **Profile & Settings** — one combined screen for viewing and managing the user's profile and app preferences; do not split these into separate top-level screens in the MVP.
