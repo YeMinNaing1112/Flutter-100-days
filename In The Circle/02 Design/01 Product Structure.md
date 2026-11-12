@@ -235,7 +235,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 ### Partner connection
 - **Invitation Page** — generate and share a private, single-use invitation link.
-- **Invitation Profile** — open the inviter's normal profile from the link; the invitee can accept or decline.
+- **User Profile Screen** — reusable profile view for another user. When opened through an invitation link, it shows the inviter's normal profile with Accept and Decline actions; invitation context does not require a separate profile screen.
 
 ### Task and goal details
 - **Task Screen** — one reusable screen with Create, View, and Edit modes. Users can create a task, view its details and progress, or edit their own task. A partner's task is view-only; partners cannot edit another person's task.
