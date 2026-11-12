@@ -139,6 +139,15 @@ Initial content:
 
 Examples may include saving for a wedding, planning a trip, or preparing for a future home.
 
+### Goal screen structure — reusable screen confirmed
+
+Use one reusable **Goal Screen** with three modes:
+- **Create** — create a personal or shared goal.
+- **View** — see the goal's details and progress, including relevant partner contributions and milestones.
+- **Edit** — update a goal.
+
+Keep these modes within one screen rather than creating separate Goal Details and Add / Edit Goal screens. The exact goal fields, layout, milestones, and contribution interactions remain to be designed.
+
 ## 5. Future feature — Partner Alarm (not part of the MVP)
 
 **Concept:** Partners can create personalized alarms for each other as a fun way to show care and encourage healthy daily routines.
@@ -230,7 +239,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 ### Task and goal details
 - **Task Screen** — one reusable screen with Create, View, and Edit modes. Users can create a task, view its details and progress, or edit their own task. A partner's task is view-only; partners cannot edit another person's task.
-- **Goal Screen** — the goal screen structure and its modes are still to be decided.
+- **Goal Screen** — one reusable screen with Create, View, and Edit modes. Goal-specific details such as shared progress, partner contributions, and milestones remain to be designed.
 
 ### Account management
 - **Profile & Settings** — one combined screen for viewing and managing the user's profile and app preferences; do not split these into separate top-level screens in the MVP.
