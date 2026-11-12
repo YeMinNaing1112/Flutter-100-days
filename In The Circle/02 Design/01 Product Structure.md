@@ -29,7 +29,8 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 
 - A new user should create an account and complete their profile before entering the main app experience.
 - After Profile Setup, take the user directly to **My Day**; do not add a separate introductory walkthrough or tutorial to the MVP onboarding flow.
-- MVP sign-up methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
+- MVP authentication methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
+- Use one shared **Welcome / Authentication screen** for both Sign Up and Sign In, allowing users to switch between the two flows rather than navigating to separate screens.
 - The first-time onboarding sequence is **Welcome / Authentication → Profile Setup → My Day**.
 - A returning user who signs in and already has a completed profile can go directly to My Day.
 - Keep initial Profile Setup minimal: **display name is required**, while **profile photo and short introduction are optional**.
@@ -168,6 +169,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 
 - [x] For a new user, complete account creation and Profile Setup before entering the main app; the first-time flow is Welcome / Authentication → Profile Setup → My Day.
 - [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
+- [x] Use one shared Welcome / Authentication screen for both Sign Up and Sign In.
 - [x] Allow returning users with completed profiles to go directly to My Day after signing in.
 - [x] After first-time Profile Setup, take users directly to My Day without a separate introductory walkthrough.
 - [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
@@ -209,7 +211,7 @@ These details are intentionally not finalised yet:
 This is an initial inventory for planning, not a finalized screen list. Some destinations may be states or sections within an existing screen rather than separate screens.
 
 ### Account and onboarding
-- **Welcome / Authentication** — create an account or sign in using email and password or Google.
+- **Welcome / Authentication** — one shared screen where users can switch between Sign Up and Sign In using email and password or Google.
 - **Profile Setup** — add a required display name and optionally add a profile photo and short introduction after first-time account creation.
 
 ### Main app
