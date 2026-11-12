@@ -31,7 +31,7 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 - MVP sign-up methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
 - The first-time onboarding sequence is **Welcome / Authentication → Profile Setup → My Day**.
 - A returning user who signs in and already has a completed profile can go directly to My Day.
-- The exact profile fields and which ones are required remain to be designed.
+- Keep initial Profile Setup minimal: **display name is required**, while **profile photo and short introduction are optional**.
 - Partner connection is not required during onboarding; users can enter and use the app in Solo Mode.
 
 ## 1.3 Partner connection — MVP invitation method
@@ -169,6 +169,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 - [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
 - [x] Allow returning users with completed profiles to go directly to My Day after signing in.
 - [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
+- [x] Keep initial Profile Setup minimal: display name is required; profile photo and short introduction are optional.
 - [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
 - [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
 - [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
@@ -193,7 +194,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 ## 8. Still to design
 
 These details are intentionally not finalised yet:
-- The exact profile fields and which profile fields are required during initial setup.
+- Whether additional profile information is needed beyond the confirmed minimal setup.
 - The exact sections and layout inside each of the three pages.
 - The information and actions shown in a task-detail view.
 - The precise task-progress states and how progress is calculated.
@@ -207,7 +208,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 ### Account and onboarding
 - **Welcome / Authentication** — create an account or sign in using email and password or Google.
-- **Profile Setup** — complete the user's In The Circle profile after first-time account creation.
+- **Profile Setup** — add a required display name and optionally add a profile photo and short introduction after first-time account creation.
 
 ### Main app
 - **My Day** — personal routines, tasks, and progress; compact partner progress appears only in Connected Mode.
