@@ -176,6 +176,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 - [x] After first-time Profile Setup, take users directly to My Day without a separate introductory walkthrough.
 - [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
 - [x] Keep initial Profile Setup minimal: display name is required; profile photo and short introduction are optional.
+- [x] Combine profile management and app preferences in one **Profile & Settings** screen for the MVP.
 - [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
 - [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
 - [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
@@ -233,7 +234,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 - **Add / Edit Goal** — create or update a shared goal.
 
 ### Account management
-- **Profile & Settings** — view and manage the user's profile and app preferences.
+- **Profile & Settings** — one combined screen for viewing and managing the user's profile and app preferences; do not split these into separate top-level screens in the MVP.
 
 **MVP exclusion:** Partner Alarm is not included in this first screen inventory.
 
