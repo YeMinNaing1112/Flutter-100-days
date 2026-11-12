@@ -25,7 +25,15 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 - After a partner connection is established, the Partner and Our Goals destinations become available, and the partner-progress overview can appear on My Day.
 - The exact wording and visual design of the connection state remain to be designed.
 
-## 1.2 Partner connection — MVP invitation method
+## 1.2 Onboarding — account and profile first
+
+- A new user should create an account and complete their profile before entering the main app experience.
+- The first-time onboarding sequence is **Welcome / Authentication → Profile Setup → My Day**.
+- A returning user who signs in and already has a completed profile can go directly to My Day.
+- The exact profile fields and which ones are required remain to be designed.
+- Partner connection is not required during onboarding; users can enter and use the app in Solo Mode.
+
+## 1.3 Partner connection — MVP invitation method
 
 - The first version will use a **private, shareable invitation link** generated for the intended partner. The link carries the invitation code/token, so the recipient does not need to type it manually.
 - The inviter can share the link through external messaging apps such as Telegram or Messenger.
@@ -156,6 +164,9 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 
 ## 7. Confirmed decisions
 
+- [x] For a new user, complete account creation and Profile Setup before entering the main app; the first-time flow is Welcome / Authentication → Profile Setup → My Day.
+- [x] Allow returning users with completed profiles to go directly to My Day after signing in.
+- [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
 - [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
 - [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
 - [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
@@ -180,6 +191,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 ## 8. Still to design
 
 These details are intentionally not finalised yet:
+- The exact profile fields and which profile fields are required during initial setup.
 - The exact sections and layout inside each of the three pages.
 - The information and actions shown in a task-detail view.
 - The precise task-progress states and how progress is calculated.
@@ -191,14 +203,16 @@ These details are intentionally not finalised yet:
 
 This is an initial inventory for planning, not a finalized screen list. Some destinations may be states or sections within an existing screen rather than separate screens.
 
+### Account and onboarding
+- **Welcome / Authentication** — create an account or sign in.
+- **Profile Setup** — complete the user's In The Circle profile after first-time account creation.
+
 ### Main app
 - **My Day** — personal routines, tasks, and progress; compact partner progress appears only in Connected Mode.
 - **Partner** — partner activity and task progress; shows the locked state in Solo Mode.
 - **Our Goals** — shared goals and responsibilities; shows the locked state in Solo Mode.
 
-### Account and partner connection
-- **Welcome / Authentication** — sign up and sign in.
-- **Profile Setup** — create the user's In The Circle profile.
+### Partner connection
 - **Invitation Page** — generate and share a private, single-use invitation link.
 - **Invitation Profile** — open the inviter's normal profile from the link; the invitee can accept or decline.
 
@@ -217,6 +231,6 @@ The need for each proposed screen, and whether any can be combined, will be deci
 
 ## 10. Next step
 
-Review the preliminary MVP screen inventory and decide which account and connection screens are truly needed before sketching the main app pages.
+Continue reviewing the preliminary MVP screen inventory and decide which account and connection screens are truly needed before sketching the main app pages.
 
 > This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
