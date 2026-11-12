@@ -127,7 +127,7 @@ Initial content:
 
 Examples may include saving for a wedding, planning a trip, or preparing for a future home.
 
-## 5. Partner Alarm — playful care for daily routines
+## 5. Future feature — Partner Alarm (not part of the MVP)
 
 **Concept:** Partners can create personalized alarms for each other as a fun way to show care and encourage healthy daily routines.
 
@@ -144,7 +144,7 @@ Possible experiences discussed:
 - The feature should express gratitude and mutual support, never control or pressure.
 - Challenges are encouragement, not proof of obedience.
 
-The detailed alarm controls, challenge rules, notifications, and dismissal behavior are still to be designed. The concept is mutual: both partners can give and receive these gestures.
+Partner Alarm is explicitly out of scope for the first MVP and may be explored in a later release. Its detailed controls, challenge rules, notifications, and dismissal behavior are not part of the current screen architecture.
 
 ## 6. Structure at a glance
 
@@ -156,9 +156,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 7. Confirmed decisions
 
-- [x] After an invitation code is entered, show the inviter's profile and require the invited person to explicitly confirm before connecting.
-- [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a partner invitation code.
-- [x] Require the invited person to review the inviter's profile and explicitly accept the connection after entering a valid invitation code.
+- [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
 - [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
 - [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
 - [x] Use one-sided acceptance: the invitee reviews the inviter's normal profile and accepts or declines; acceptance connects the accounts immediately without a second approval from the inviter.
@@ -171,9 +169,7 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 - [x] Open the Partner page when the user wants to see more of the partner's progress.
 - [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
 - [x] Allow a partner's task to be opened for more detail.
-- [x] Include the Partner Alarm concept as a playful, mutual way to support daily routines.
-- [x] Choose rest-day approach C: each person controls their own rest days, and partners can also gift each other a rest day.
-- [x] Keep the feature rooted in gratitude and care, not control.
+- [x] Keep Partner Alarm out of the first MVP; consider it for a later release.
 - [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
 - [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
 - [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
@@ -183,7 +179,6 @@ The detailed alarm controls, challenge rules, notifications, and dismissal behav
 
 ## 8. Still to design
 
-- The information shown on the inviter's profile preview during the invitation-acceptance step.
 These details are intentionally not finalised yet:
 - The exact sections and layout inside each of the three pages.
 - The information and actions shown in a task-detail view.
@@ -191,10 +186,37 @@ These details are intentionally not finalised yet:
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
 - Partner invitation details: profile visibility before connection, invitation-link validity, and what happens when an invitation is declined or revoked.
-- Partner Alarm details: alarm creation, scheduling, sound selection, challenge library/customization, notification behavior, and how a receiver can dismiss or skip an alarm.
 
-## 9. Next step
+## 9. Preliminary MVP screen inventory
 
-Define the **screen-level structure** for each destination, starting with My Day: identify its sections, their order, and what the user can do from each section.
+This is an initial inventory for planning, not a finalized screen list. Some destinations may be states or sections within an existing screen rather than separate screens.
+
+### Main app
+- **My Day** — personal routines, tasks, and progress; compact partner progress appears only in Connected Mode.
+- **Partner** — partner activity and task progress; shows the locked state in Solo Mode.
+- **Our Goals** — shared goals and responsibilities; shows the locked state in Solo Mode.
+
+### Account and partner connection
+- **Welcome / Authentication** — sign up and sign in.
+- **Profile Setup** — create the user's In The Circle profile.
+- **Invitation Page** — generate and share a private, single-use invitation link.
+- **Invitation Profile** — open the inviter's normal profile from the link; the invitee can accept or decline.
+
+### Task and goal details
+- **Task Details** — view a task and its progress.
+- **Add / Edit Task** — create or update a personal task.
+- **Goal Details** — view a shared goal and contributions.
+- **Add / Edit Goal** — create or update a shared goal.
+
+### Account management
+- **Profile & Settings** — view and manage the user's profile and app preferences.
+
+**MVP exclusion:** Partner Alarm is not included in this first screen inventory.
+
+The need for each proposed screen, and whether any can be combined, will be decided before wireframing.
+
+## 10. Next step
+
+Review the preliminary MVP screen inventory and decide which account and connection screens are truly needed before sketching the main app pages.
 
 > This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
