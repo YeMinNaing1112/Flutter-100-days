@@ -168,9 +168,9 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 
 ## 7. Confirmed decisions
 
-- [x] For a new user, complete account creation and Profile Setup before entering the main app; the first-time flow is Welcome / Authentication → Profile Setup → My Day.
+- [x] For a new user signing up with email and password, complete email verification before Profile Setup; the first-time flow is Welcome / Authentication → Email Verification → Profile Setup → My Day. Google sign-in skips the separate verification step.
 - [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
-- [x] Require email verification after email-and-password sign-up and before Profile Setup; Google sign-in does not need a separate verification step.
+- [x] Require email verification after email-and-password sign-up and before Profile Setup; use a dedicated Email Verification screen. Google sign-in does not need a separate verification step.
 - [x] Use one shared Welcome / Authentication screen for both Sign Up and Sign In.
 - [x] Allow returning users with completed profiles to go directly to My Day after signing in.
 - [x] After first-time Profile Setup, take users directly to My Day without a separate introductory walkthrough.
@@ -214,7 +214,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 ### Account and onboarding
 - **Welcome / Authentication** — one shared screen where users can switch between Sign Up and Sign In using email and password or Google.
-- **Email Verification** — a required step after email-and-password sign-up and before Profile Setup. Google sign-in skips this separate step. Whether verification is presented as a dedicated screen or another in-app state remains to be designed.
+- **Email Verification** — a dedicated screen shown after email-and-password sign-up and before Profile Setup. Google sign-in skips this screen.
 - **Profile Setup** — add a required display name and optionally add a profile photo and short introduction after first-time account creation.
 
 ### Main app
