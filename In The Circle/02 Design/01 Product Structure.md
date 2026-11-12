@@ -1,7 +1,7 @@
 # Product Structure — In The Circle
 
 > **Phase:** Design  
-> **Status:** Initial structure decisions confirmed; screen-level details remain open.  
+> **Status:** MVP screen inventory confirmed; screen-level details remain open.  
 > **Product philosophy:** Connect → Support → Grow
 
 ## 1. Navigation model
@@ -219,9 +219,9 @@ These details are intentionally not finalised yet:
 - What each partner can choose to share, and the privacy boundaries around shared activity.
 - Partner invitation details: profile visibility before connection, invitation-link validity, and what happens when an invitation is declined or revoked.
 
-## 9. Preliminary MVP screen inventory
+## 9. Confirmed MVP screen inventory
 
-This is an initial inventory for planning, not a finalized screen list. Some destinations may be states or sections within an existing screen rather than separate screens.
+The MVP screen inventory is confirmed at **11 reusable screens**. Some experiences, such as locked states and invitation actions, are states or contexts within existing screens rather than separate screens.
 
 ### Account and onboarding
 - **Welcome / Authentication** — one shared screen where users can switch between Sign Up and Sign In using email and password or Google.
@@ -246,10 +246,10 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 **MVP exclusion:** Partner Alarm is not included in this first screen inventory.
 
-The need for each proposed screen, and whether any can be combined, will be decided before wireframing.
+The screen inventory is confirmed. Detailed layouts, content hierarchy, and interactions will be worked out during wireframing.
 
 ## 10. Next step
 
-Continue reviewing the preliminary MVP screen inventory and decide which account and connection screens are truly needed before sketching the main app pages.
+Move into wireframing. Start by sketching the main app pages, beginning with My Day, then Partner and Our Goals. Decide the page layouts and information hierarchy before selecting UI components or implementation details.
 
 > This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
