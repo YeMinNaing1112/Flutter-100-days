@@ -31,7 +31,8 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 - After Profile Setup, take the user directly to **My Day**; do not add a separate introductory walkthrough or tutorial to the MVP onboarding flow.
 - MVP authentication methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
 - Use one shared **Welcome / Authentication screen** for both Sign Up and Sign In, allowing users to switch between the two flows rather than navigating to separate screens.
-- The first-time onboarding sequence is **Welcome / Authentication → Profile Setup → My Day**.
+- For email-and-password sign-up, require the user to verify their email address before proceeding to Profile Setup. The first-time flow is **Welcome / Authentication → Email Verification → Profile Setup → My Day**.
+- For Google sign-in, a separate email-verification step is not required; after authentication, a new user proceeds to Profile Setup.
 - A returning user who signs in and already has a completed profile can go directly to My Day.
 - Keep initial Profile Setup minimal: **display name is required**, while **profile photo and short introduction are optional**.
 - Partner connection is not required during onboarding; users can enter and use the app in Solo Mode.
@@ -169,6 +170,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 
 - [x] For a new user, complete account creation and Profile Setup before entering the main app; the first-time flow is Welcome / Authentication → Profile Setup → My Day.
 - [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
+- [x] Require email verification after email-and-password sign-up and before Profile Setup; Google sign-in does not need a separate verification step.
 - [x] Use one shared Welcome / Authentication screen for both Sign Up and Sign In.
 - [x] Allow returning users with completed profiles to go directly to My Day after signing in.
 - [x] After first-time Profile Setup, take users directly to My Day without a separate introductory walkthrough.
@@ -212,6 +214,7 @@ This is an initial inventory for planning, not a finalized screen list. Some des
 
 ### Account and onboarding
 - **Welcome / Authentication** — one shared screen where users can switch between Sign Up and Sign In using email and password or Google.
+- **Email Verification** — a required step after email-and-password sign-up and before Profile Setup. Google sign-in skips this separate step. Whether verification is presented as a dedicated screen or another in-app state remains to be designed.
 - **Profile Setup** — add a required display name and optionally add a profile photo and short introduction after first-time account creation.
 
 ### Main app
