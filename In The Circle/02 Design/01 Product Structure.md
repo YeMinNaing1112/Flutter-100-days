@@ -28,6 +28,7 @@ There will be **no separate Emotional Security tab**. Emotional security should 
 ## 1.2 Onboarding — account and profile first
 
 - A new user should create an account and complete their profile before entering the main app experience.
+- MVP sign-up methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
 - The first-time onboarding sequence is **Welcome / Authentication → Profile Setup → My Day**.
 - A returning user who signs in and already has a completed profile can go directly to My Day.
 - The exact profile fields and which ones are required remain to be designed.
@@ -165,6 +166,7 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 ## 7. Confirmed decisions
 
 - [x] For a new user, complete account creation and Profile Setup before entering the main app; the first-time flow is Welcome / Authentication → Profile Setup → My Day.
+- [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
 - [x] Allow returning users with completed profiles to go directly to My Day after signing in.
 - [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
 - [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
@@ -204,7 +206,7 @@ These details are intentionally not finalised yet:
 This is an initial inventory for planning, not a finalized screen list. Some destinations may be states or sections within an existing screen rather than separate screens.
 
 ### Account and onboarding
-- **Welcome / Authentication** — create an account or sign in.
+- **Welcome / Authentication** — create an account or sign in using email and password or Google.
 - **Profile Setup** — complete the user's In The Circle profile after first-time account creation.
 
 ### Main app
