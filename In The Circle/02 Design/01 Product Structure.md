@@ -57,10 +57,10 @@ This keeps connection intentional and private while making it easy to invite a l
 
 ## 2. My Day — Home
 
-**Purpose:** Help the user manage their own day. In Connected Mode, My Day may also include a compact overview of the partner's progress.
+**Purpose:** Help the user manage their own day through one simple task list and personal progress. In Connected Mode, My Day may also include a compact overview of the partner's progress.
 
 Initial content:
-- The user's daily to-do list.
+- One **Today's Tasks** list containing the user's daily tasks.
 - The user's personal daily progress.
 - In Connected Mode only, a compact overview of the partner's progress. This is not shown in Solo Mode.
 
@@ -87,16 +87,16 @@ This keeps My Day personal while making the partner's journey visible and reinfo
 - Users need a way to add tasks to their lists.
 - The visual treatment and interaction pattern for adding a task will be decided after sketching the My Day screen; do not commit to a specific button, sheet, or separate screen yet.
 
-### Daily task organization — flexible structure confirmed
+### Daily task organization — one unified list confirmed
 
-- Keep a dedicated **Morning Routine** section for tasks that are specifically part of the user's morning routine.
-- Keep other tasks together in one **Today's Tasks** list rather than dividing them into Morning, Afternoon, and Evening sections.
+- Show all personal daily tasks together in one **Today's Tasks** section.
+- Do not create a separate Morning Routine section or divide tasks into Morning, Afternoon, and Evening categories.
 - Keep the task list in its existing order; users do not need to drag, rearrange, or prioritize tasks manually.
 - Let users tap any task to mark it complete, regardless of its position in the list. For example, Task 2 can be completed while Tasks 1 and 3 remain unfinished.
 - When a task is completed, keep it in the same position and show its completed state (for example, a checkmark and subdued or struck-through text). Do not automatically move completed tasks to the bottom.
-- Do not impose a fixed completion sequence or time-of-day grouping on general daily tasks.
+- Do not impose a fixed completion sequence or time-of-day grouping on daily tasks.
 
-This gives routine habits a clear home while allowing the rest of the day to remain flexible and low-pressure.
+This keeps My Day simple and flexible, with one clear place for all daily tasks.
 
 ## 3. Partner
 
@@ -107,6 +107,7 @@ Initial content:
 - Completed and unfinished work, with the current progress of tasks.
 - A summary of the partner's overall daily progress.
 - Relevant activity and journey/arrival updates.
+- A **Partner Alarm** area where partners can create and manage personalized alarms for each other.
 
 A user should be able to tap an individual partner task to open its detail view. The exact fields and interactions in that detail view are still to be designed.
 
@@ -148,31 +149,32 @@ Use one reusable **Goal Screen** with three modes:
 
 Keep these modes within one screen rather than creating separate Goal Details and Add / Edit Goal screens. The exact goal fields, layout, milestones, and contribution interactions remain to be designed.
 
-## 5. Future feature — Partner Alarm (not part of the MVP)
+## 5. Partner Alarm — included in the MVP
 
-**Concept:** Partners can create personalized alarms for each other as a fun way to show care and encourage healthy daily routines.
+**Purpose:** Let partners create personalized, playful alarms for each other as a way to show care and encourage daily routines.
 
-Possible experiences discussed:
-- A partner chooses a playful alarm sound, such as duck quacks or a funny voice.
-- A partner sets a small wake-up challenge, such as doing 10 squats.
-- Partners may use their own recorded voices or other playful sounds.
-- The feature should make waking up and building routines feel more fun and supportive.
+The Partner screen will include a **Partner Alarm** area. Alarm experiences may include:
+- Songs or music selected as the alarm sound.
+- A partner's recorded voice, funny voices, or other playful sound effects.
+- A math question that the person must solve to dismiss the alarm.
+- Fun challenges, such as shaking the phone or doing a small physical activity, before dismissing the alarm.
+
+The alarm should feel personal, playful, and supportive. Challenges are optional ways to make waking up more engaging; they must not become punishment, surveillance, or proof of obedience.
 
 ### Rest-day decision — Option C confirmed
 
 - Each person controls their own rest days and can choose when they need time off.
 - Partners can also gift each other a rest day as a gesture of care.
 - The feature should express gratitude and mutual support, never control or pressure.
-- Challenges are encouragement, not proof of obedience.
 
-Partner Alarm is explicitly out of scope for the first MVP and may be explored in a later release. Its detailed controls, challenge rules, notifications, and dismissal behavior are not part of the current screen architecture.
+Partner Alarm is part of the MVP. The exact alarm setup flow, music and sound selection, recording options, challenge types, dismissal behavior, scheduling, and rest-day interactions remain to be designed.
 
 ## 6. Structure at a glance
 
 | Destination | Main responsibility |
 |---|---|
 | **My Day** | Personal tasks and progress; compact partner-progress overview only when connected |
-| **Partner** | Partner's tasks, task progress and details, activities, and journey updates |
+| **Partner** | Partner's tasks, task progress and details, activities, journey updates, and Partner Alarm |
 | **Our Goals** | Mutual goals, shared responsibilities, contributions, and shared progress |
 
 ## 7. Confirmed decisions
@@ -199,8 +201,8 @@ Partner Alarm is explicitly out of scope for the first MVP and may be explored i
 - [x] Open the Partner page when the user wants to see more of the partner's progress.
 - [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
 - [x] Allow a partner's task to be opened for more detail.
-- [x] Keep Partner Alarm out of the first MVP; consider it for a later release.
-- [x] Keep a dedicated Morning Routine section, with all other tasks in one flexible Today's Tasks list.
+- [x] Include Partner Alarm in the MVP as part of the Partner experience, with personalized sounds/music and playful dismissal challenges such as math questions or fun activities.
+- [x] Keep all daily tasks together in one Today's Tasks list; do not add a separate Morning Routine section or time-of-day categories.
 - [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
 - [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
 - [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
@@ -215,6 +217,7 @@ These details are intentionally not finalised yet:
 - The exact sections and layout inside each of the three pages.
 - The information and actions shown in a task-detail view.
 - The precise task-progress states and how progress is calculated.
+- The Partner Alarm setup and management experience, including sound/music selection, partner voice recordings, challenge options (such as math or fun activities), dismissal behavior, scheduling, and rest-day controls.
 - How journey and arrival updates are presented and controlled.
 - What each partner can choose to share, and the privacy boundaries around shared activity.
 - Partner invitation details: profile visibility before connection, invitation-link validity, and what happens when an invitation is declined or revoked.
@@ -244,12 +247,12 @@ The MVP screen inventory is confirmed at **11 reusable screens**. Some experienc
 ### Account management
 - **Profile & Settings** — one combined screen for viewing and managing the user's profile and app preferences; do not split these into separate top-level screens in the MVP.
 
-**MVP exclusion:** Partner Alarm is not included in this first screen inventory.
+**Partner Alarm:** The feature is included in the MVP and belongs within the Partner destination. The exact UI and whether alarm creation/management needs a dedicated reusable screen will be decided during UI refinement; do not assume a separate screen before that decision.
 
-The screen inventory is confirmed. Detailed layouts, content hierarchy, and interactions will be worked out during wireframing.
+The current primary screen inventory remains the starting point. Detailed layouts, content hierarchy, and interactions will be worked out during UI refinement and wireframing.
 
 ## 10. Next step
 
-Move into wireframing. Start by sketching the main app pages, beginning with My Day, then Partner and Our Goals. Decide the page layouts and information hierarchy before selecting UI components or implementation details.
+Continue refining the existing UI before proceeding with additional wireframes. Update My Day to use one Today's Tasks list, then refine the Partner page to include Partner Alarm. Decide the alarm entry point and interaction structure before selecting detailed UI components or implementation details.
 
 > This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
