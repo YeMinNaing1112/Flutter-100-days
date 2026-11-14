@@ -1,258 +1,365 @@
 # Product Structure — In The Circle
 
-> **Phase:** Design  
-> **Status:** MVP screen inventory confirmed; screen-level details remain open.  
-> **Product philosophy:** Connect → Support → Grow
+> **Phase:** Design / MVP UI refinement  
+> **Status:** Core product structure and key dashboard decisions confirmed; remaining screen-level details are being finalized before manual Figma work.  
+> **Product philosophy:** Connect → Support → Grow  
+> **Working constraint:** Finalize layouts and interactions in conversation first. The founder will recreate the agreed UI manually in Figma; avoid unnecessary Figma AI generations.
 
-## 1. Navigation model
+## 1. Product and navigation model
 
-The application will use a **bottom navigation bar** with three primary destinations:
+In The Circle is a relationship app for committed couples. It helps partners connect through everyday life, support each other's individual progress, and grow towards shared goals.
 
-1. **My Day** — the user's home screen.
-2. **Partner** — a deeper view of the partner's daily activities and progress.
-3. **Our Goals** — a dedicated space for goals and responsibilities shared by both partners.
+The application uses a bottom navigation bar with three primary destinations:
 
-There will be **no separate Emotional Security tab**. Emotional security should be supported within the My Day and Partner experiences.
+1. **My Day** — the user's own daily activities and progress.
+2. **Partner** — the partner's daily activities and progress, plus Partner Alarm.
+3. **Our Goals** — goals both partners are working towards together.
 
-## 1.1 Solo and connected experiences
+There is no separate Emotional Security tab. Reassurance and understanding should come naturally through the My Day and Partner experiences.
 
-- A person can use In The Circle on their own without needing a partner connection.
-- Each account can have **only one active partner connection at a time**, reflecting the product's focus on committed, two-person relationships.
-- **My Day remains fully usable in Solo Mode**, including personal routines, tasks, and individual progress. It does not show a partner-progress overview when the user is not connected.
-- The three main tabs remain visible in both Solo Mode and Connected Mode.
-- In Solo Mode, opening **Partner** or **Our Goals** takes the user to an in-page locked/connection state explaining that connecting with a partner unlocks that feature.
-- Do not interrupt the solo experience with pop-ups, unsolicited prompts, or repeated connection reminders. The connection invitation appears only after the user intentionally opens a partner-dependent tab.
-- After a partner connection is established, the Partner and Our Goals destinations become available, and the partner-progress overview can appear on My Day.
-- The exact wording and visual design of the connection state remain to be designed.
+### 1.1 Solo and connected experiences
 
-## 1.2 Onboarding — account and profile first
+- A person can use In The Circle alone without needing a partner connection.
+- Each account can have only one active partner connection at a time, reflecting the product's focus on committed, two-person relationships.
+- My Day remains fully usable in Solo Mode, including personal tasks and individual progress.
+- The three main tabs remain visible in Solo Mode.
+- In Solo Mode, opening Partner or Our Goals shows an in-page locked/connection state. Do not interrupt the user with unsolicited pop-ups or repeated connection reminders.
+- After a partner connection is established, Partner and Our Goals become available, and the partner-progress card appears on My Day.
+- The exact visual treatment of the locked states remains to be finalized.
 
-- A new user should create an account and complete their profile before entering the main app experience.
-- After Profile Setup, take the user directly to **My Day**; do not add a separate introductory walkthrough or tutorial to the MVP onboarding flow.
-- MVP authentication methods: **email and password** or **Google sign-in**. Apple sign-in is not included in the initial MVP authentication scope.
-- Use one shared **Welcome / Authentication screen** for both Sign Up and Sign In, allowing users to switch between the two flows rather than navigating to separate screens.
-- For email-and-password sign-up, require the user to verify their email address before proceeding to Profile Setup. The first-time flow is **Welcome / Authentication → Email Verification → Profile Setup → My Day**.
-- For Google sign-in, a separate email-verification step is not required; after authentication, a new user proceeds to Profile Setup.
-- A returning user who signs in and already has a completed profile can go directly to My Day.
-- Keep initial Profile Setup minimal: **display name is required**, while **profile photo and short introduction are optional**.
-- Partner connection is not required during onboarding; users can enter and use the app in Solo Mode.
+### 1.2 Onboarding — account and profile first
 
-## 1.3 Partner connection — MVP invitation method
+- New users create an account and complete their profile before entering the main app.
+- After Profile Setup, take the user directly to My Day. Do not add a separate introductory walkthrough or tutorial to the MVP.
+- MVP authentication methods: email and password, or Google sign-in. Apple sign-in is not included in the initial MVP.
+- Use one shared Welcome / Authentication screen for Sign Up and Sign In.
+- Email-and-password sign-up requires email verification before Profile Setup.
+- Google sign-in does not require a separate email-verification screen.
+- A returning user with a completed profile goes directly to My Day after signing in.
+- Initial Profile Setup stays minimal: display name is required; profile photo and short introduction are optional.
+- Partner connection is not required during onboarding; users can begin in Solo Mode.
+- Profile management and app preferences remain combined in one Profile & Settings screen.
 
-- The first version will use a **private, shareable invitation link** generated for the intended partner. The link carries the invitation code/token, so the recipient does not need to type it manually.
+### 1.3 Partner connection — MVP invitation method
+
+- Use a private, shareable invitation link generated for the intended partner. The link carries the invitation code/token, so the recipient does not need to type it manually.
 - The inviter can share the link through external messaging apps such as Telegram or Messenger.
-- When the recipient taps the link, In The Circle should open directly to the inviter's normal profile, where the recipient can review the profile and explicitly accept or decline the connection.
-- Each invitation is **single-use**: only one account can successfully accept it. Once an invitee accepts and the connection is established, that invitation expires and cannot be used by anyone else.
-- Simply opening or viewing the invitation should not consume it; it is used up when someone successfully accepts.
-- QR-code scanning is not part of the first version. It can be considered for a later release.
-
-This keeps connection intentional and private while making it easy to invite a long-distance or nearby partner through a messaging app.
-
-### One-sided acceptance — invitee decides
-
-- After the invitee opens the private link, they see the inviter's normal profile and can choose to accept or decline.
-- If the invitee accepts, the two accounts become connected immediately; the inviter does not need to approve a second request.
+- When the recipient opens the link, In The Circle opens the inviter's normal profile. The recipient can review the profile and explicitly accept or decline.
+- Each invitation is single-use: it is consumed only when an invitee successfully accepts and the connection is established.
+- Simply opening or viewing the invitation does not consume it.
+- QR-code scanning is not part of the first version.
+- If the invitee accepts, the accounts connect immediately; the inviter does not need to approve a second request.
 - If the invitee declines, the accounts remain unconnected.
-- Each invitation is single-use. Once accepted, the link expires and cannot be used again.
 
-## 2. My Day — Home
+## 2. My Day — home dashboard
 
-**Purpose:** Help the user manage their own day through one simple task list and personal progress. In Connected Mode, My Day may also include a compact overview of the partner's progress.
+**Purpose:** Help users manage their own daily activities while keeping their partner's progress visible in Connected Mode.
 
-Initial content:
-- One **Today's Tasks** list containing the user's daily tasks.
-- The user's personal daily progress.
-- In Connected Mode only, a compact overview of the partner's progress. This is not shown in Solo Mode.
+### 2.1 Confirmed dashboard layout
 
-The partner overview should provide an at-a-glance completion summary, for example:
-- **3 of 5 tasks completed**
-- **60% complete**
-- A visual progress bar.
+In Connected Mode, the layout is:
 
-Tapping the partner overview should open the Partner page for more detail.
+1. Header with a friendly greeting and date.
+2. **Your Progress** and **Partner Progress** cards side by side.
+3. **Today's Tasks** as a full-width section underneath.
+4. Bottom navigation: My Day, Partner, Our Goals.
 
-### My Day visual hierarchy — Option C confirmed
+In Solo Mode:
+- Show the user's own progress card without a partner-progress card.
+- Keep Today's Tasks full-width.
+- Keep the same bottom navigation.
 
-Use a **balanced focus**:
-- The user's personal progress appears first and remains the primary focus.
-- The partner's progress appears immediately below in a compact, easy-to-scan overview.
-- The user's daily task list follows.
-- In Connected Mode, the Partner overview remains visible near the top without making My Day feel like a shared dashboard.
-- In Solo Mode, omit the Partner overview entirely so My Day remains a complete personal experience.
+### 2.2 Progress cards — playful direction confirmed
 
-This keeps My Day personal while making the partner's journey visible and reinforcing the idea that both people are growing together.
+Both progress cards use a consistent structure and a friendly, playful visual style:
 
-### Adding tasks — capability confirmed, interface undecided
+- Small playful illustration.
+- Clear title: Your Progress or Partner Progress.
+- Completed tasks / total tasks (for example, 3/5).
+- Rounded visual progress bar.
+- Completion percentage.
+- Optional short, encouraging microcopy.
 
-- Users need a way to add tasks to their lists.
-- The visual treatment and interaction pattern for adding a task will be decided after sketching the My Day screen; do not commit to a specific button, sheet, or separate screen yet.
+The cards sit side by side in Connected Mode. They should feel warm and motivating, not like a competitive productivity dashboard.
 
-### Daily task organization — one unified list confirmed
+**Navigation rule:** Tapping the Partner Progress card on My Day opens the Partner tab/dashboard. It does not open the partner profile.
 
-- Show all personal daily tasks together in one **Today's Tasks** section.
+### 2.3 Today's Tasks — one unified list confirmed
+
+- Show the user's daily tasks together in one full-width Today's Tasks section.
 - Do not create a separate Morning Routine section or divide tasks into Morning, Afternoon, and Evening categories.
-- Keep the task list in its existing order; users do not need to drag, rearrange, or prioritize tasks manually.
-- Let users tap any task to mark it complete, regardless of its position in the list. For example, Task 2 can be completed while Tasks 1 and 3 remain unfinished.
-- When a task is completed, keep it in the same position and show its completed state (for example, a checkmark and subdued or struck-through text). Do not automatically move completed tasks to the bottom.
-- Do not impose a fixed completion sequence or time-of-day grouping on daily tasks.
+- Users can tap a task to mark it complete; tap again to undo completion.
+- Completed tasks stay in their original positions and show a checkmark plus subdued or struck-through text.
+- Do not automatically move completed tasks to the bottom.
+- Do not require drag-and-drop, manual rearrangement, or a fixed completion sequence.
+- The task owner is responsible for completing their own tasks.
 
-This keeps My Day simple and flexible, with one clear place for all daily tasks.
+A reusable Task Screen can support creating, viewing, and editing a task. A user's own task is editable by its owner.
 
-## 3. Partner
+## 3. Partner — partner dashboard
 
-**Purpose:** Help the user understand what their partner is doing and how their day is progressing.
+**Purpose:** Help each person understand what their partner is doing, see their progress, and support them through everyday life.
 
-Initial content:
-- The partner's daily tasks.
-- Completed and unfinished work, with the current progress of tasks.
-- A summary of the partner's overall daily progress.
-- Relevant activity and journey/arrival updates.
-- A **Partner Alarm** area where partners can create and manage personalized alarms for each other.
+### 3.1 Confirmed dashboard layout
 
-A user should be able to tap an individual partner task to open its detail view. The exact fields and interactions in that detail view are still to be designed.
+The Partner dashboard contains:
 
-### Partner task progress — optional percentage
+1. Header with the partner's name and a short personal status/message.
+2. Partner profile/avatar icon at the top right.
+3. **Partner Progress** and **Dynamic Partner Alarm** cards side by side.
+4. **Today's Tasks** as a full-width section underneath.
+5. Bottom navigation: My Day, Partner, Our Goals.
 
-- Support simple task states such as **Not started** and **Completed** for ordinary tasks.
-- Allow a task to show a percentage when progress is meaningful (for example, a longer-running project).
-- Percentage progress is optional; do not require every task to have a percentage.
-- **Only the task owner can update their own task's progress**, including its optional percentage; the partner can view the shared progress but cannot edit it.
-- The Partner page should show each task's appropriate progress representation, while My Day can retain a compact overall completion summary.
-- The exact interaction for setting and updating a task's percentage remains to be designed.
+The visual style should match My Day: friendly, playful, clean, card-based, and easy to scan.
 
-### Emotional security principle
+### 3.2 Partner profile navigation
 
-The experience should communicate a partner's real activity and progress rather than relying on a separate manual availability label such as “Busy” or “Available”.
+- Tapping the profile/avatar icon in the Partner header opens the Partner Profile / Overview.
+- The Partner Progress card is not a shortcut to the partner profile.
+- The Partner Progress card on My Day opens the Partner dashboard, not the profile.
+- Partner Profile is a separate destination reached through the profile/avatar icon.
 
-For example, seeing that a partner is working on a task, has completed some tasks, or is travelling home can help the other person understand their situation without repeatedly asking.
+### 3.3 Partner Progress
 
-This should create reassurance and understanding, not surveillance or pressure.
+- The Partner Progress card summarizes the partner's daily task progress.
+- It uses the same visual language as the progress cards on My Day: playful illustration, completed/total count, progress bar, and percentage.
+- Do not use this card as a profile shortcut.
 
-## 4. Our Goals
+### 3.4 Today's Tasks — shared visibility and individual responsibility
+
+- Show the partner's daily tasks in the Partner dashboard's full-width Today's Tasks section.
+- The other partner can view the partner's tasks, completed states, and progress.
+- Do not hide ordinary daily tasks behind a separate per-task sharing choice. The shared daily-task view supports the product's purpose of understanding and growing alongside one another.
+- **Only the task owner can mark their own tasks complete or undo their own completion.**
+- The other partner can view progress but cannot complete or edit tasks on the owner's behalf.
+- Keep the task list in the same order as the owner's list.
+
+**Product principle:** We grow together, but each person remains responsible for their own growth.
+
+### 3.5 Partner Profile / Overview
+
+The Partner Profile is opened through the profile/avatar icon at the top of the Partner dashboard. It is separate from the Partner Progress card.
+
+The exact profile fields and overview content still need UI refinement. Do not route the Partner Progress card to this screen.
+
+## 4. Partner Alarm — MVP feature inside Partner
+
+**Purpose:** Let one partner create a thoughtful, playful experience for the other. Partner Alarm is a way to express care, share memories, make each other smile, encourage each other, and build shared rituals — not a general-purpose alarm-clock system.
+
+### 4.1 Entry point and dynamic card
+
+- Partner Alarm belongs inside the Partner UI; it is not a separate bottom-navigation destination.
+- The Dynamic Partner Alarm card sits side by side with Partner Progress.
+- If a scheduled alarm exists, the card shows the next scheduled alarm's time and type.
+- If no alarm exists, the card shows **“+ Create Alarm”**.
+- Tapping the card opens Partner Alarm management.
+
+### 4.2 Alarm content types
+
+MVP alarm content may include:
+
+- A meaningful song or music choice.
+- A voice message recorded by the partner.
+- A funny sound or playful audio.
+- A math question.
+- A playful challenge.
+
+The experience should remain caring, voluntary, playful, and non-controlling. A recipient must have a clear way to dismiss or skip an interactive challenge; the alarm must not become punishment, surveillance, or proof of obedience.
+
+### 4.3 Basic end-to-end flow
+
+1. The creator opens Partner Alarm from the Partner dashboard.
+2. The creator starts creating an alarm.
+3. The creator chooses an alarm experience type and supplies its content.
+4. The creator chooses when it should happen and may add a personal message.
+5. The creator reviews and schedules the alarm.
+6. At the scheduled time, the recipient receives the alarm experience.
+7. The recipient can listen, interact, or skip/dismiss.
+8. After dismissal, show the creator's optional personal message in a small dialog when one exists. If there is no message, do not show an empty dialog.
+
+### 4.4 Alarm screens and states to design
+
+- **Partner Alarm Management** — view and manage upcoming partner alarms; entry point is the dynamic card.
+- **Create/Edit Alarm** — choose the experience type, configure its content, set its schedule, add an optional personal message, and preview it.
+- **Receiving Alarm Experience** — an adaptable recipient experience for songs, voice/funny audio, math questions, and playful challenges.
+- **Post-alarm Message Dialog** — optional message shown after dismissal when the creator supplied one.
+- **Permission/unavailable state** — explain clearly when the recipient's device cannot receive the alarm because required notification/alarm permissions are unavailable.
+
+Do not add unrelated clock features such as world clocks, stopwatch, timers, or a generic alarm-clock dashboard.
+
+Scheduling details such as repeat options, time-zone handling, and exact sound/music source are still open and should be finalized only when needed for the UI and technical plan.
+
+## 5. Our Goals — shared goals only
 
 **Purpose:** Give both partners a dedicated place to work towards a shared future.
 
-Initial content:
-- Mutual goals.
-- Shared tasks and responsibilities.
-- Each partner's contributions.
-- Overall progress towards each shared goal.
+- Our Goals contains shared goals only.
+- Do not add separate My Goals or Partner's Goals sections here; individual daily activities belong in My Day and Partner.
+- Our Goals uses the same bottom-navigation destination and visual language as the rest of the app.
 
-Examples may include saving for a wedding, planning a trip, or preparing for a future home.
+### 5.1 Our Goals dashboard — confirmed design direction
 
-### Goal screen structure — reusable screen confirmed
+The dashboard contains:
 
-Use one reusable **Goal Screen** with three modes:
-- **Create** — create a personal or shared goal.
-- **View** — see the goal's details and progress, including relevant partner contributions and milestones.
-- **Edit** — update a goal.
+1. Header: Our Goals and a short supportive subtitle.
+2. An **Our Journey** summary showing active goals and completed milestones.
+3. **Our Shared Goals** section with an Add action.
+4. Full-width goal cards, one per row.
+5. A separate **Completed Together** section for completed goals.
+6. Bottom navigation.
 
-Keep these modes within one screen rather than creating separate Goal Details and Add / Edit Goal screens. The exact goal fields, layout, milestones, and contribution interactions remain to be designed.
+Goal cards use small playful illustrations rather than plain icons. Each active goal card can show:
+- Goal illustration.
+- Goal title and optional short description.
+- Overall progress percentage and progress bar.
+- Completed milestones / total milestones.
+- Next milestone, when applicable.
 
-## 5. Partner Alarm — included in the MVP
+Completed goals move out of the active list into Completed Together.
 
-**Purpose:** Let partners create personalized, playful alarms for each other as a way to show care and encourage daily routines.
+### 5.2 Milestone-based progress — confirmed
 
-The Partner screen will include a **Partner Alarm** area. Alarm experiences may include:
-- Songs or music selected as the alarm sound.
-- A partner's recorded voice, funny voices, or other playful sound effects.
-- A math question that the person must solve to dismiss the alarm.
-- Fun challenges, such as shaking the phone or doing a small physical activity, before dismissing the alarm.
+- Goal progress is calculated from milestones, not entered as a manually adjusted percentage.
+- Overall progress = completed milestones ÷ total milestones.
+- A milestone counts as completed only after its required completion rule has been satisfied.
+- When all milestones are complete, the goal moves into Completed Together.
 
-The alarm should feel personal, playful, and supportive. Challenges are optional ways to make waking up more engaging; they must not become punishment, surveillance, or proof of obedience.
+### 5.3 Two milestone completion rules — confirmed
 
-### Rest-day decision — Option C confirmed
+Each milestone has its own completion rule:
 
-- Each person controls their own rest days and can choose when they need time off.
-- Partners can also gift each other a rest day as a gesture of care.
-- The feature should express gratitude and mutual support, never control or pressure.
+1. **Either partner** — either partner can mark the milestone complete; it becomes complete for both.
+2. **Both partners** — each partner must confirm completion individually; the milestone becomes complete only after both have confirmed.
 
-Partner Alarm is part of the MVP. The exact alarm setup flow, music and sound selection, recording options, challenge types, dismissal behavior, scheduling, and rest-day interactions remain to be designed.
+- Default rule: **Either partner**.
+- The creator can choose the rule for each milestone.
+- For Both partners, one partner's confirmation must never automatically confirm for the other.
+- Both partners can see the confirmation status.
+- The app records who confirmed and when.
+- Goal progress increases only after the milestone is fully completed.
 
-## 6. Structure at a glance
+### 5.4 Goal and milestone screens
 
-| Destination | Main responsibility |
-|---|---|
-| **My Day** | Personal tasks and progress; compact partner-progress overview only when connected |
-| **Partner** | Partner's tasks, task progress and details, activities, journey updates, and Partner Alarm |
-| **Our Goals** | Mutual goals, shared responsibilities, contributions, and shared progress |
+Use a reusable **Goal Screen** with Create, View, and Edit modes unless a later usability test shows that a separate screen is necessary.
 
-## 7. Confirmed decisions
+Goal details include:
+- Goal title and description.
+- Overall milestone-based progress.
+- Milestone list and completion states.
+- Who confirmed a milestone when Both partners is selected.
+- Add Milestone action.
 
-- [x] For a new user signing up with email and password, complete email verification before Profile Setup; the first-time flow is Welcome / Authentication → Email Verification → Profile Setup → My Day. Google sign-in skips the separate verification step.
-- [x] Support email-and-password registration and Google sign-in in the MVP; defer Apple sign-in.
-- [x] Require email verification after email-and-password sign-up and before Profile Setup; use a dedicated Email Verification screen. Google sign-in does not need a separate verification step.
-- [x] Use one shared Welcome / Authentication screen for both Sign Up and Sign In.
-- [x] Allow returning users with completed profiles to go directly to My Day after signing in.
-- [x] After first-time Profile Setup, take users directly to My Day without a separate introductory walkthrough.
-- [x] Do not require a partner connection during onboarding; users can start in Solo Mode.
-- [x] Keep initial Profile Setup minimal: display name is required; profile photo and short introduction are optional.
-- [x] Combine profile management and app preferences in one **Profile & Settings** screen for the MVP.
-- [x] In Solo Mode, the locked Partner or Our Goals page provides an “Unlock this feature” action that leads to a dedicated invitation page to generate a private partner invitation link.
-- [x] Use a private, shareable invitation link carrying an invitation code/token in the first version; defer QR-code scanning to a later release.
-- [x] Make each invitation single-use: after one invitee accepts and the connection is established, the invitation expires and cannot be accepted by another account.
-- [x] Use one-sided acceptance: the invitee reviews the inviter's normal profile and accepts or declines; acceptance connects the accounts immediately without a second approval from the inviter.
-- [x] Use a bottom navigation bar with three primary tabs.
-- [x] Make My Day the default home screen.
-- [x] Support only one active partner connection per account.
-- [x] Give Our Goals its own dedicated page.
-- [x] Show a small partner-progress overview on My Day only in Connected Mode; omit it in Solo Mode.
-- [x] Use a visual progress bar and a completed/total summary (for example, 3/5 and 60%).
-- [x] Open the Partner page when the user wants to see more of the partner's progress.
-- [x] Integrate emotional-security information into My Day and Partner instead of creating a separate page.
-- [x] Allow a partner's task to be opened for more detail.
-- [x] Include Partner Alarm in the MVP as part of the Partner experience, with personalized sounds/music and playful dismissal challenges such as math questions or fun activities.
-- [x] Keep all daily tasks together in one Today's Tasks list; do not add a separate Morning Routine section or time-of-day categories.
-- [x] Allow users to tap any general daily task to mark it complete, regardless of its position in the list.
-- [x] Keep completed tasks in their original position in the list; show completion in place rather than moving the task.
-- [x] Make individual task percentages optional; use simple completion states for tasks that do not need percentage tracking.
-- [x] Let each task owner update their own task progress; partners can view shared progress but cannot edit the other's tasks.
-- [x] Keep tasks in their existing order; do not require drag-and-drop or manual rearrangement.
-- [x] Use one reusable Task Screen for creating, viewing, and editing tasks instead of separate Task Details and Add / Edit Task screens. A user's own task can be edited by its owner; a partner's task is view-only.
+The exact milestone editor and confirmation presentation (inline state, dialog, or sheet) remain to be finalized during UI refinement.
 
-## 8. Still to design
+## 6. MVP screen inventory
 
-These details are intentionally not finalised yet:
-- Whether additional profile information is needed beyond the confirmed minimal setup.
-- The exact sections and layout inside each of the three pages.
-- The information and actions shown in a task-detail view.
-- The precise task-progress states and how progress is calculated.
-- The Partner Alarm setup and management experience, including sound/music selection, partner voice recordings, challenge options (such as math or fun activities), dismissal behavior, scheduling, and rest-day controls.
-- How journey and arrival updates are presented and controlled.
-- What each partner can choose to share, and the privacy boundaries around shared activity.
-- Partner invitation details: profile visibility before connection, invitation-link validity, and what happens when an invitation is declined or revoked.
-
-## 9. Confirmed MVP screen inventory
-
-The MVP screen inventory is confirmed at **11 reusable screens**. Some experiences, such as locked states and invitation actions, are states or contexts within existing screens rather than separate screens.
+The following is the working MVP screen/state inventory for manual Figma design. Some items are reusable screens; others are states or dialogs within a screen.
 
 ### Account and onboarding
-- **Welcome / Authentication** — one shared screen where users can switch between Sign Up and Sign In using email and password or Google.
-- **Email Verification** — a dedicated screen shown after email-and-password sign-up and before Profile Setup. Google sign-in skips this screen.
-- **Profile Setup** — add a required display name and optionally add a profile photo and short introduction after first-time account creation.
+1. **Welcome / Authentication** — shared Sign Up and Sign In screen; email/password or Google.
+2. **Email Verification** — shown after email/password registration.
+3. **Profile Setup** — required display name; optional profile photo and introduction.
+4. **Invitation Page** — generate and share a private, single-use partner invitation link.
+5. **Partner Profile / Invitation Review** — inviter's profile with Accept and Decline actions when opened through an invitation.
 
 ### Main app
-- **My Day** — personal routines, tasks, and progress; compact partner progress appears only in Connected Mode.
-- **Partner** — partner activity and task progress; shows the locked state in Solo Mode.
-- **Our Goals** — shared goals and responsibilities; shows the locked state in Solo Mode.
+6. **My Day Dashboard** — greeting/date, side-by-side progress cards in Connected Mode, full-width Today's Tasks, and bottom navigation.
+7. **Task Screen** — reusable Create, View, and Edit modes; owner can edit their own task.
+8. **Partner Dashboard** — partner header/status/avatar, side-by-side Partner Progress and Dynamic Partner Alarm cards, full-width partner Today's Tasks.
+9. **Partner Profile / Overview** — opened from the profile/avatar icon in the Partner header.
+10. **Profile & Settings** — combined profile management and app preferences.
 
-### Partner connection
-- **Invitation Page** — generate and share a private, single-use invitation link.
-- **User Profile Screen** — reusable profile view for another user. When opened through an invitation link, it shows the inviter's normal profile with Accept and Decline actions; invitation context does not require a separate profile screen.
+### Partner Alarm
+11. **Partner Alarm Management** — list and manage partner alarms.
+12. **Create/Edit Alarm** — select and configure alarm content, schedule, optional personal message, and preview.
+13. **Receiving Alarm Experience** — adaptable experience for music, voice/funny audio, math, or playful challenge.
+14. **Post-alarm Message Dialog** — shown only when an optional personal message exists.
+15. **Alarm permission/unavailable state** — explanatory state when delivery permissions are missing.
 
-### Task and goal details
-- **Task Screen** — one reusable screen with Create, View, and Edit modes. Users can create a task, view its details and progress, or edit their own task. A partner's task is view-only; partners cannot edit another person's task.
-- **Goal Screen** — one reusable screen with Create, View, and Edit modes. Goal-specific details such as shared progress, partner contributions, and milestones remain to be designed.
+### Our Goals
+16. **Our Goals Dashboard** — Our Journey summary, active full-width goal cards, Completed Together section.
+17. **Goal Screen** — reusable Create, View, and Edit modes.
+18. **Milestone completion/confirmation state** — supports Either partner and Both partners rules; can be implemented within Goal Screen rather than as a separate destination.
 
-### Account management
-- **Profile & Settings** — one combined screen for viewing and managing the user's profile and app preferences; do not split these into separate top-level screens in the MVP.
+### Shared app states
+- Solo Mode locked state for Partner and Our Goals.
+- Empty states for task lists, alarms, and goals.
+- Loading and error states for data-dependent screens.
+- Invitation expired, already used, or declined states.
+- No scheduled Partner Alarm state (“+ Create Alarm”).
+- Completed Together empty state.
 
-**Partner Alarm:** The feature is included in the MVP and belongs within the Partner destination. The exact UI and whether alarm creation/management needs a dedicated reusable screen will be decided during UI refinement; do not assume a separate screen before that decision.
+This inventory is a practical design checklist, not a requirement to create a separate Figma page for every state. Reuse screens and components wherever possible.
 
-The current primary screen inventory remains the starting point. Detailed layouts, content hierarchy, and interactions will be worked out during UI refinement and wireframing.
+## 7. Confirmed product principles and decisions
 
-## 10. Next step
+- [x] Product philosophy: Connect → Support → Grow.
+- [x] Focus on committed, two-person relationships.
+- [x] One active partner connection per account.
+- [x] My Day is the default home screen.
+- [x] Bottom navigation has My Day, Partner, and Our Goals.
+- [x] Solo Mode is usable; partner-dependent tabs show an in-page locked state.
+- [x] Account and profile setup happen before entering the main app.
+- [x] Email/password and Google sign-in are in the MVP; Apple sign-in is deferred.
+- [x] Email/password sign-up requires email verification; Google sign-in skips the separate verification screen.
+- [x] Display name is required; profile photo and introduction are optional.
+- [x] Partner connection is not required during onboarding.
+- [x] Partner connection uses a private, shareable, single-use invitation link.
+- [x] The invitee reviews the inviter's profile and accepts or declines; acceptance connects immediately.
+- [x] My Day progress cards are side by side in Connected Mode.
+- [x] Progress cards use a playful illustration, completed/total count, progress bar, and percentage.
+- [x] Today's Tasks is full-width below the progress cards.
+- [x] Daily tasks stay in one unified list; no Morning Routine section or time-of-day categories.
+- [x] A user can complete or undo their own task by tapping it; completed tasks remain in place.
+- [x] Tapping Partner Progress on My Day opens the Partner tab, not the partner profile.
+- [x] Partner dashboard has Partner Progress and Dynamic Partner Alarm cards side by side, with Today's Tasks full-width below.
+- [x] Partner header includes partner name, a short status/message, and a profile/avatar icon.
+- [x] Tapping the Partner profile/avatar icon opens Partner Profile / Overview.
+- [x] Partner Progress is not a shortcut to Partner Profile.
+- [x] Partner's daily tasks are visible in the Partner dashboard.
+- [x] Only the task owner can mark their own tasks complete or undo completion; the other partner has view-only access.
+- [x] Partner Alarm is part of the Partner UI, not a separate bottom-navigation destination.
+- [x] Dynamic Partner Alarm card shows the next scheduled alarm's time and type, or “+ Create Alarm” when none exists; tapping it opens management.
+- [x] Partner Alarm is for care, memories, encouragement, playful moments, and shared rituals — not a general-purpose alarm clock.
+- [x] Alarm content may include meaningful music, partner-recorded voice, funny sound, math question, or playful challenge.
+- [x] Alarm experiences must remain voluntary, caring, and non-controlling.
+- [x] Our Goals contains shared goals only.
+- [x] Goal cards are full-width, one per row, with small playful illustrations.
+- [x] Completed goals move to a separate Completed Together section.
+- [x] Goal progress is milestone-based.
+- [x] Each milestone uses Either partner or Both partners completion; Either partner is the default.
+- [x] Both partners must individually confirm a Both partners milestone.
+- [x] Progress updates only when the milestone's completion rule is satisfied.
+- [x] Profile management and app preferences share one Profile & Settings screen.
+- [x] Rest days remain an expression of personal choice and mutual care, never pressure or control.
 
-Continue refining the existing UI before proceeding with additional wireframes. Update My Day to use one Today's Tasks list, then refine the Partner page to include Partner Alarm. Decide the alarm entry point and interaction structure before selecting detailed UI components or implementation details.
+## 8. Still to finalize
 
-> This is an initial design structure based on the founder's decisions. It is not yet a final UI specification or a validated set of requirements.
+These are open UI/product details, not permission to add unrelated features:
+
+- Exact visual styling, color palette, typography, spacing, and illustration system.
+- Exact My Day and Partner header details and empty states.
+- Partner Profile / Overview content.
+- Whether and how journey/arrival updates fit the MVP UI.
+- Exact Partner Alarm management layout and alarm editing/deletion behavior.
+- Alarm repeat options, time-zone display, music source, and audio playback constraints.
+- Exact math-question and playful-challenge interaction details.
+- Alarm permission behavior and delivery limitations across devices.
+- Exact Goal Screen layout and fields.
+- Milestone add/edit and confirmation presentation.
+- Empty, loading, and error-state visuals.
+
+## 9. UI finalization workflow
+
+To respect the project's time and Figma-credit constraints:
+
+1. Finalize screen purpose, layout, and interactions in conversation.
+2. Use text wireframes to resolve structure before visual polish.
+3. Confirm the screen before moving to the next one.
+4. Finalize a shared visual system after the core layouts are agreed.
+5. The founder recreates the finalized UI manually in Figma.
+6. Move to implementation only after the MVP screens and interactions are sufficiently specified.
+
+Do not spend Figma AI credits on exploratory generations or screens that have not been agreed.
+
+> This document records the current founder-approved product and UI decisions. Open items are explicitly marked as unfinished; do not silently turn proposals into confirmed requirements.
