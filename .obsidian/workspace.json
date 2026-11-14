@@ -115,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "In The Circle/02 Design/01 Product Structure.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -217,10 +216,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48958dc7ff0d20bb",
+  "active": "2e6c79c5767537f6",
   "lastOpenFiles": [
-    "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
     "In The Circle/02 Design/01 Product Structure.md",
+    "In The Circle/01 Discovery/Discovery Stage Wrap-Up.md",
     "In The Circle/02 Design",
     "Untitled.base",
     "In The Circle/01 Discovery/Problem Space.md",
